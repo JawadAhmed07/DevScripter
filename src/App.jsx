@@ -1,4 +1,3 @@
-
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './pages/header'
@@ -7,8 +6,8 @@ import Footer from './pages/footer'
 import Contact from './pages/contact'
 import Services from './pages/services'
 import About from './pages/about'
+import Blog from './pages/blog'
 import Writeforus from './pages/writeforus'
-
 import * as React from 'react';
 
 // import Content from './pages/content'
@@ -17,7 +16,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Header/>
+      <Header/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/services' element={<Services/>}></Route>
@@ -29,8 +28,6 @@ function App() {
       <Footer/>
     </BrowserRouter>
   )
-
 }
 
-
-export default App; 
+export default App;
