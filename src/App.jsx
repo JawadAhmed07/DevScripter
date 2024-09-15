@@ -8,6 +8,7 @@ import Contact from './pages/contact'
 import Services from './pages/services'
 import About from './pages/about'
 import Writeforus from './pages/writeforus'
+import Blog from "./pages/blog"
 
 import * as React from 'react';
 
@@ -17,16 +18,16 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Header/>
+      <Header />
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/services' element={<Services/>}></Route>
-        <Route path='/contact' element={<Contact/>}></Route>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/services' element={<Services />}></Route>
+        <Route path='/contact' element={<Contact />}></Route>
         <Route path='/blog' element={<Blog/>}></Route>
-        <Route path='/about' element={<About/>}></Route>
-        <Route path='/writeforus' element={<Writeforus/>}></Route>
+        <Route path='/about' element={<About />}></Route>
+        <Route path='/writeforus' element={<Writeforus />}></Route>
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   )
 
