@@ -8,6 +8,8 @@ import Services from './pages/services'
 import About from './pages/about'
 import Writeforus from './pages/writeforus'
 import Blog from './pages/blog'
+import * as React from 'react';
+
 // import Content from './pages/content'
 
 function App() {
