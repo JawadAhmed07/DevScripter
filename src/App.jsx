@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> d46ad0ba56baeadec1e88989efa1a7725977b2c5
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './pages/header'
@@ -11,12 +8,9 @@ import Contact from './pages/contact'
 import Services from './pages/services'
 import About from './pages/about'
 import Writeforus from './pages/writeforus'
-import Blog from './pages/blog'
-<<<<<<< HEAD
-=======
+
 import * as React from 'react';
 
->>>>>>> d46ad0ba56baeadec1e88989efa1a7725977b2c5
 // import Content from './pages/content'
 
 function App() {
@@ -38,8 +32,5 @@ function App() {
 
 }
 
-<<<<<<< HEAD
-export default App;
-=======
+
 export default App; 
->>>>>>> d46ad0ba56baeadec1e88989efa1a7725977b2c5

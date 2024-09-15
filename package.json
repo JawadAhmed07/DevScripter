@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> d46ad0ba56baeadec1e88989efa1a7725977b2c5
 {
   "name": "service.json",
   "private": true,
@@ -42,8 +39,6 @@
     "tailwindcss": "^3.4.11",
     "vite": "^5.4.1"
   }
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> d46ad0ba56baeadec1e88989efa1a7725977b2c5
+
