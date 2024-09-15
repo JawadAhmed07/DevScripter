@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionActions from '@mui/material/AccordionActions';
@@ -53,6 +52,7 @@ function Services() {
                         />
                     </div>
                 </div>
+
             </section>
             {/* Pricing section */}
             <section className="text-gray-600 body-font overflow-hidden">
