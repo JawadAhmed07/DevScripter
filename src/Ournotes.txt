@@ -1,0 +1,7 @@
+git pull origin main
+phr kam start
+
+git status 
+git add .
+git commit -m "Jo change kia h bta do"
+git push origin main
