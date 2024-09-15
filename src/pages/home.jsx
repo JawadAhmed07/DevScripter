@@ -1,7 +1,7 @@
 function Home() {
     return (
         <>
-            {/* Main front page */}
+            {/* Main front page (compay description) */}
             <section className="text-gray-600 body-font">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -34,7 +34,9 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* 2nd page content */}
+            {/* 2nd page content
+            https://w3torch.com/services/web-development/
+            */}
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
@@ -147,7 +149,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* Third section */}
+            {/* Third section (How we work) */}
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap">
                     <div className="flex flex-wrap w-full">
@@ -296,7 +298,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* Fourth section */}
+            {/* Fourth section (our clients and project done) */}
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap-reverse">
                     <div className="lg:w-1/2 w-full rounded-lg overflow-hidden mt-6 lg:mt-0">
@@ -335,7 +337,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* Fifth section */}
+            {/* Fifth section (service we offer) */}
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap w-full mb-20">
@@ -432,7 +434,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* sixth section */}
+            {/* sixth section (our recent blogs) */}
             <section className="text-gray-600 body-font">
                 <h1 className="text-center text-4xl capitalize">Our recent blogs</h1>
                 <div className="container px-5 py-24 mx-auto">
@@ -641,7 +643,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* seventhsection */}
+            {/* seventhsection (client testimonial) */}
             <section className="text-gray-600 body-font">
                 <h1 className="text-4xl text-center capitalize">What our client says</h1>
                 <div className="container px-5 py-24 mx-auto">
@@ -709,7 +711,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* eight section */}
+            {/* eight section (get in touch with us) */}
             <section className="text-gray-600 body-font relative">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-12">
