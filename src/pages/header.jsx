@@ -3,12 +3,16 @@ import { Link } from "react-router-dom";
 function Header() {
     return (
         <header
-        style={{backgroundColor: "#4A7766",
-            opacity: 0.6
-        }}
-        className="text-white body-font shadow shadow-black">
+            style={{
+                backgroundColor: "#ECE7E2",
+                // opacity: 0.6
+            }}
+            // style={{backgroundColor: "#4A7766",
+            //     opacity: 0.6
+            // }}
+            className="text-black body-font shadow shadow-black">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                <a className="flex title-font font-medium items-center text-black mb-4 md:mb-0">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -48,7 +52,7 @@ function Header() {
             </div>
         </header>
 
-  )
+    )
 }
 
 export default Header;  

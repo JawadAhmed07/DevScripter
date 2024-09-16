@@ -10,11 +10,12 @@ function Home() {
         <>
             {/* Main front page (compay description) */}
             <section
-            className="text-gray-600 body-font bg-cover bg-center" style={{ backgroundImage: 'url(https://doctorofseo.com/wp-content/uploads/revslider/home-1/slide1-home1.jpg)', 
-                // backgroundColor:"#4A7766"
-            }}>
+                className="text-gray-600 body-font bg-cover bg-center" style={{
+                    backgroundImage: 'url(https://doctorofseo.com/wp-content/uploads/revslider/home-1/slide1-home1.jpg)',
+                    // backgroundColor:"#4A7766"
+                }}>
                 <div
-                className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-opacity-50 ">
+                    className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-opacity-50 ">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 px-16 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                         <h1 className="title-font sm:text-5xl capitalize text-3xl mb-4 font-medium text-white">
                             Best website <br /> development
@@ -40,18 +41,19 @@ function Home() {
             */}
 
             <section
-            style={{backgroundColor: "#ECE7E2"}}
-            className="text-gray-600 body-font ">
+                style={{ backgroundColor: "#ECE7E2" }}
+                // style={{backgroundColor: "#FDF1F5"}}
+                className="text-gray-600 body-font ">
                 <div className="container px-3 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
                         <h2 className="text-indigo-500 tracking-widest text-2xl font-medium title-font mb-1">
                             Core Features
                         </h2>
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 capitalize">
-                           Specialize in web development service
+                            Specialize in web development service
                         </h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                        "Crafting unique and personalized web experiences that deliver impactful and lasting results for your business."
+                            "Crafting unique and personalized web experiences that deliver impactful and lasting results for your business."
                         </p>
                     </div>
                     <div className="flex flex-wrap justify-center">
@@ -120,15 +122,16 @@ function Home() {
             </section>
             {/* Third section (How we work) */}
             <section
-                        style={{backgroundColor: "#ECE7E2"}}
+                style={{ backgroundColor: "#ECE7E2" }}
+                // style={{backgroundColor: "#FDF1F5"}}
 
-            className="text-gray-600 body-font">
+                className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap">
                     <div className="flex flex-wrap w-full">
                         <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
                             <div className="flex relative pb-12">
                                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                    <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+                                    <div className="h-full w-1 bg-black pointer-events-none" />
                                 </div>
                                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
                                     <svg
@@ -148,7 +151,7 @@ function Home() {
                                         STEP 1
                                     </h2>
                                     <p className="leading-relaxed">
-                                    Understand your needs and create a clear plan.
+                                        Understand your needs and create a clear plan.
 
 
                                     </p>
@@ -156,7 +159,7 @@ function Home() {
                             </div>
                             <div className="flex relative pb-12">
                                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                    <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+                                    <div className="h-full w-1 bg-black pointer-events-none" />
                                 </div>
                                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
                                     <svg
@@ -176,14 +179,14 @@ function Home() {
                                         STEP 2
                                     </h2>
                                     <p className="leading-relaxed">
-                                    Craft a custom design and prototype for approval.
+                                        Craft a custom design and prototype for approval.
 
-</p>
+                                    </p>
                                 </div>
                             </div>
                             <div className="flex relative pb-12">
                                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                    <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+                                    <div className="h-full w-1 bg-black pointer-events-none" />
                                 </div>
                                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
                                     <svg
@@ -204,7 +207,7 @@ function Home() {
                                         STEP 3
                                     </h2>
                                     <p className="leading-relaxed">
-                                    Turn the design into a fully functional solution.
+                                        Turn the design into a fully functional solution.
 
 
                                     </p>
@@ -212,7 +215,7 @@ function Home() {
                             </div>
                             <div className="flex relative pb-12">
                                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                    <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+                                    <div className="h-full w-1 bg-black pointer-events-none" />
                                 </div>
                                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
                                     <svg
@@ -233,9 +236,9 @@ function Home() {
                                         STEP 4
                                     </h2>
                                     <p className="leading-relaxed">
-                                    Thorough testing and revisions based on your feedback.
+                                        Thorough testing and revisions based on your feedback.
 
-</p>
+                                    </p>
                                 </div>
                             </div>
                             <div className="flex relative">
@@ -258,50 +261,54 @@ function Home() {
                                         FINISH
                                     </h2>
                                     <p className="leading-relaxed">
-                                    Finalize and deliver the project, ready for launch.
+                                        Finalize and deliver the project, ready for launch.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <img
                             className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-                            src="https://cdn.pixabay.com/photo/2022/08/31/18/11/teamwork-7423950_640.jpg"
+                            src="https://doctorofseo.com/wp-content/uploads/2020/02/image1-home1.png"
                             alt="step"
+                        // src="https://cdn.pixabay.com/photo/2022/08/31/18/11/teamwork-7423950_640.jpg"
+                        // alt="step"
                         />
                     </div>
                 </div>
             </section>
             {/* Fourth section (our clients and project done) */}
-            <section className="text-gray-600 body-font">
+            <section
+                style={{ backgroundColor: "#ECE7E2" }}
+                className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap-reverse">
                     <div className="lg:w-1/2 w-full rounded-lg overflow-hidden mt-6 lg:mt-0">
                         <img
                             className="object-cover object-center w-full h-full"
-                            src="https://dummyimage.com/600x300"
+                            src="https://images.pexels.com/photos/8439691/pexels-photo-8439691.jpeg?auto=compress&cs=tinysrgb&w=600"
                             alt="stats"
                         />
                     </div>
                     <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start lg:pl-10">
                         <div className="w-full sm:p-4 px-4 mb-6">
                             <h1 className="title-font font-medium text-xl mb-2 text-gray-900">
-                                Moon hashtag pop-up try-hard offal truffaut
+                                Explore Our Services And Boost Your Online Presence
                             </h1>
                             <div className="leading-relaxed">
-                                Pour-over craft beer pug drinking vinegar live-edge gastropub, keytar
-                                neutra sustainable fingerstache kickstarter.
+                                DEV SCRIPTERS is a digital acceleration consultancy founded in 2021. Dev Scripters builds digital products that let people do things differently – offering digital acceleration tools, resources and know-how to companies of all shapes and sizes – to make beautifully designed digital products in a way that’s fast and fits their needs.
+
                             </div>
                         </div>
                         <div className="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                            <h2 className="title-font font-medium text-3xl text-gray-900">2.7K</h2>
-                            <p className="leading-relaxed">Users</p>
+                            <h2 className="title-font font-medium text-3xl text-gray-900">35+</h2>
+                            <p className="leading-relaxed">Active client</p>
                         </div>
                         <div className="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                            <h2 className="title-font font-medium text-3xl text-gray-900">1.8K</h2>
-                            <p className="leading-relaxed">Subscribes</p>
+                            <h2 className="title-font font-medium text-3xl text-gray-900">150</h2>
+                            <p className="leading-relaxed">Project done</p>
                         </div>
                         <div className="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                            <h2 className="title-font font-medium text-3xl text-gray-900">35</h2>
-                            <p className="leading-relaxed">Downloads</p>
+                            <h2 className="title-font font-medium text-3xl text-gray-900">8+</h2>
+                            <p className="leading-relaxed">Team Advisor</p>
                         </div>
                         <div className="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                             <h2 className="title-font font-medium text-3xl text-gray-900">4</h2>
@@ -316,16 +323,15 @@ function Home() {
                     <div className="flex flex-wrap w-full mb-20">
                         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                                Pitchfork Kickstarter Taxidermy
-                            </h1>
-                            <div className="h-1 w-20 bg-indigo-500 rounded" />
+                                What we offer <br /> Web Development Services
+
+</h1>
+                            <div className="h-1 w-72 bg-indigo-500 rounded" />
                         </div>
                         <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-                            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                            gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-                            heard of them man bun deep jianbing selfies heirloom prism food truck
-                            ugh squid celiac humblebrag.
-                        </p>
+                        We specialize in building websites that are fast, responsive, and tailored to your business goals. Whether it's creating a new site from scratch or improving an existing one, our focus is on delivering a seamless, engaging experience for your users.
+
+</p>
                     </div>
                     <div className="flex flex-wrap -m-4">
                         <div className="xl:w-1/4 md:w-1/2 p-4">
