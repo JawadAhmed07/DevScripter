@@ -8,11 +8,6 @@ import Services from './pages/services'
 import About from './pages/about'
 import Blog from './pages/blog'
 import Writeforus from './pages/writeforus'
-<<<<<<< HEAD
-=======
-import Blog from "./pages/blog"
-
->>>>>>> 453cdd60858f9dcd1c2aca69b3d8a3667ab2f5a6
 import * as React from 'react';
 
 // import Content from './pages/content'
@@ -21,11 +16,7 @@ function App() {
 
   return (
     <BrowserRouter>
-<<<<<<< HEAD
-      <Header/>
-=======
       <Header />
->>>>>>> 453cdd60858f9dcd1c2aca69b3d8a3667ab2f5a6
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/services' element={<Services />}></Route>
