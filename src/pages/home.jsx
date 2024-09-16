@@ -42,7 +42,7 @@ function Home() {
 
             <section
                 style={{ backgroundColor: "#ECE7E2" }}
-                // style={{backgroundColor: "#FDF1F5"}}
+                // style={{backgroundColor: "#4A7766"}}
                 className="text-gray-600 body-font ">
                 <div className="container px-3 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
@@ -122,8 +122,8 @@ function Home() {
             </section>
             {/* Third section (How we work) */}
             <section
-                style={{ backgroundColor: "#ECE7E2" }}
-                // style={{backgroundColor: "#FDF1F5"}}
+                // style={{ backgroundColor: "#ECE7E2" }}
+                style={{backgroundColor: "#4A7766"}}
 
                 className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap">
@@ -147,10 +147,10 @@ function Home() {
                                     </svg>
                                 </div>
                                 <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                                    <h2 className="font-medium title-font text-lg text-gray-100 mb-1 tracking-wider ">
                                         STEP 1
                                     </h2>
-                                    <p className="leading-relaxed">
+                                    <p className="leading-relaxed text-gray-900">
                                         Understand your needs and create a clear plan.
 
 
@@ -175,10 +175,10 @@ function Home() {
                                     </svg>
                                 </div>
                                 <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                                    <h2 className="font-medium title-font text-lg text-gray-100 mb-1 tracking-wider ">
                                         STEP 2
                                     </h2>
-                                    <p className="leading-relaxed">
+                                    <p className="leading-relaxed text-gray-900">
                                         Craft a custom design and prototype for approval.
 
                                     </p>
@@ -203,10 +203,10 @@ function Home() {
                                     </svg>
                                 </div>
                                 <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                                    <h2 className="font-medium title-font text-lg text-gray-100 mb-1 tracking-wider ">
                                         STEP 3
                                     </h2>
-                                    <p className="leading-relaxed">
+                                    <p className="leading-relaxed text-gray-900">
                                         Turn the design into a fully functional solution.
 
 
@@ -232,10 +232,10 @@ function Home() {
                                     </svg>
                                 </div>
                                 <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                                    <h2 className="font-medium title-font text-lg text-gray-100 mb-1 tracking-wider ">
                                         STEP 4
                                     </h2>
-                                    <p className="leading-relaxed">
+                                    <p className="leading-relaxed text-gray-900">
                                         Thorough testing and revisions based on your feedback.
 
                                     </p>
@@ -257,10 +257,10 @@ function Home() {
                                     </svg>
                                 </div>
                                 <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                                    <h2 className="font-medium title-font text-lg text-gray-100 mb-1 tracking-wider ">
                                         FINISH
                                     </h2>
-                                    <p className="leading-relaxed">
+                                    <p className="leading-relaxed text-gray-900">
                                         Finalize and deliver the project, ready for launch.
                                     </p>
                                 </div>
@@ -318,95 +318,89 @@ function Home() {
                 </div>
             </section>
             {/* Fifth section (service we offer) */}
-            <section className="text-gray-600 body-font">
+            <section
+            style={{backgroundColor:"#4A7766"}} className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap w-full mb-20">
                         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
                                 What we offer <br /> Web Development Services
 
-</h1>
+                            </h1>
                             <div className="h-1 w-72 bg-indigo-500 rounded" />
                         </div>
                         <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-                        We specialize in building websites that are fast, responsive, and tailored to your business goals. Whether it's creating a new site from scratch or improving an existing one, our focus is on delivering a seamless, engaging experience for your users.
+                            We specialize in building websites that are fast, responsive, and tailored to your business goals. Whether it's creating a new site from scratch or improving an existing one, our focus is on delivering a seamless, engaging experience for your users.
 
-</p>
+                        </p>
                     </div>
                     <div className="flex flex-wrap -m-4">
-                        <div className="xl:w-1/4 md:w-1/2 p-4">
-                            <div className="bg-gray-100 p-6 rounded-lg">
+                        <div className="xl:w-1/4 md:w-1/2 p-4 ">
+                            <div className="p-6 rounded-lg  hover:text-white
+                        transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer border shadow"
+                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
+                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E9DFD8')}>
                                 <img
-                                    className="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="https://dummyimage.com/720x400"
+                                    className=" rounded w-16 object-cover object-center mb-6"
+                                    src="https://w3torch.com/wp-content/uploads/2023/02/core-development-company.png"
                                     alt="content"
                                 />
-                                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                                    SUBTITLE
-                                </h3>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                                    Chichen Itza
+                                <h2 className="text-xl text-gray-900 font-medium  title-font mb-4 ">
+                                    Custom website development
                                 </h2>
-                                <p className="leading-relaxed text-base">
-                                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                                    hexagon disrupt edison bulbche.
+                                <p className="leading-relaxed text-base">Our custom web development service offers tailored solutions that cater to your unique business needs and provide a seamless user experience for your customers.
                                 </p>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/2 p-4">
-                            <div className="bg-gray-100 p-6 rounded-lg">
+                            <div className="p-6 rounded-lg  hover:text-white
+                        transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer border shadow"
+                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
+                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E9DFD8')}>
                                 <img
-                                    className="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="https://dummyimage.com/721x401"
+                                    className="rounded w-16 object-cover object-center mb-6"
+                                    src="https://w3torch.com/wp-content/uploads/2023/02/wordpress-development-agency.png"
                                     alt="content"
                                 />
-                                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                                    SUBTITLE
-                                </h3>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                                    Colosseum Roma
+                                <h2 className="text-xl text-gray-900 font-medium title-font mb-4">
+                                    Wordpress Development
                                 </h2>
                                 <p className="leading-relaxed text-base">
-                                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                                    hexagon disrupt edison bulbche.
+                                    Our WordPress web development service provides customizable and user-friendly websites for businesses of all sizes, with a focus on modern design and responsive functionality.
                                 </p>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/2 p-4">
-                            <div className="bg-gray-100 p-6 rounded-lg">
+                            <div className="p-6 rounded-lg  hover:text-white
+                        transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer border shadow"
+                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
+                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E9DFD8')}>
                                 <img
-                                    className="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="https://dummyimage.com/722x402"
+                                    className="rounded w-16 object-cover object-center mb-6"
+                                    src="https://w3torch.com/wp-content/uploads/2023/02/ecommerce-development-company.png"
                                     alt="content"
                                 />
-                                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                                    SUBTITLE
-                                </h3>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                                    Great Pyramid of Giza
-                                </h2>
+                                <h2 className="text-xl text-gray-900 font-medium title-font mb-4">
+                                    E-commerce Development                                </h2>
                                 <p className="leading-relaxed text-base">
-                                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                                    hexagon disrupt edison bulbche.
+                                    Our ecommerce web development service create customized online stores with user-friendly interfaces and secure payment gateways to help businesses grow their online sales.
                                 </p>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/2 p-4">
-                            <div className="bg-gray-100 p-6 rounded-lg">
+                            <div className="p-6 rounded-lg  hover:text-white
+                        transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer border shadow"
+                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
+                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E9DFD8')}>
                                 <img
-                                    className="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="https://dummyimage.com/723x403"
+                                    className="rounded w-16 object-cover object-center mb-6"
+                                    src="https://w3torch.com/wp-content/uploads/2023/02/website-maintenance-company.png"
                                     alt="content"
                                 />
-                                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                                    SUBTITLE
-                                </h3>
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                                    San Francisco
-                                </h2>
+                                    Website Maintainance                                </h2>
                                 <p className="leading-relaxed text-base">
-                                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                                    hexagon disrupt edison bulbche.
+                                    Our website maintenance service ensures that your website is up-to-date, secure, and running smoothly, allowing you to focus on your business while we take care of the technical details.
                                 </p>
                             </div>
                         </div>
