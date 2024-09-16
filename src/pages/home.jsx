@@ -10,8 +10,8 @@ function Home() {
         <>
             {/* Main front page (compay description) */}
             <section
-            className="text-gray-600 body-font bg-cover bg-center" style={{ backgroundImage: 'url(https://cdn.pixabay.com/photo/2023/03/14/20/22/office-7853103_960_720.jpg)', 
-                backgroundColor:"#4A7766"
+            className="text-gray-600 body-font bg-cover bg-center" style={{ backgroundImage: 'url(https://doctorofseo.com/wp-content/uploads/revslider/home-1/slide1-home1.jpg)', 
+                // backgroundColor:"#4A7766"
             }}>
                 <div
                 className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-opacity-50 ">
@@ -35,30 +35,27 @@ function Home() {
                     </div>
                 </div>
             </section>
-
             {/* 2nd page content
             https://w3torch.com/services/web-development/
             */}
+
             <section
             style={{backgroundColor: "#ECE7E2"}}
             className="text-gray-600 body-font ">
                 <div className="container px-3 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
-                        <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-                            ROOF PARTY POLAROID
+                        <h2 className="text-indigo-500 tracking-widest text-2xl font-medium title-font mb-1">
+                            Core Features
                         </h2>
-                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                            Master Cleanse Reliac Heirloom
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 capitalize">
+                           Specialize in web development service
                         </h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                            gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-                            heard of them man bun deep jianbing selfies heirloom prism food truck
-                            ugh squid celiac humblebrag.
+                        "Crafting unique and personalized web experiences that deliver impactful and lasting results for your business."
                         </p>
                     </div>
                     <div className="flex flex-wrap justify-center">
-                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded shadow   border-opacity-60 mx-4 my-4
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded shadow cursor-pointer  border-opacity-60 mx-4 my-4
                         hover:text-white
                         transform transition duration-300 hover:scale-105 hover:shadow-lg"
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
@@ -72,7 +69,7 @@ function Home() {
                                 Tailored web development solutions to meet your unique business needs.
                             </p>
                         </div>
-                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded  shadow border-opacity-60 mx-4 my-4
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded  shadow border-opacity-60 mx-4 cursor-pointer my-4
                         hover:text-white
                         transform transition duration-300 hover:scale-105 hover:shadow-lg"
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
@@ -88,7 +85,7 @@ function Home() {
 
                             </p>
                         </div>
-                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded   shadow border-opacity-60 mx-4 my-4
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded   shadow border-opacity-60 mx-4 cursor-pointer my-4
                         hover:text-white
                         transform transition duration-300 hover:scale-105 hover:shadow-lg"
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
@@ -104,7 +101,7 @@ function Home() {
 
                             </p>
                         </div>
-                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded shadow  border-opacity-60 mx-4 my-4
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded shadow  border-opacity-60 mx-4 cursor-pointer my-4
                         hover:text-white
                         transform transition duration-300 hover:scale-105 hover:shadow-lg"
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
@@ -122,7 +119,10 @@ function Home() {
                 </div>
             </section>
             {/* Third section (How we work) */}
-            <section className="text-gray-600 body-font">
+            <section
+                        style={{backgroundColor: "#ECE7E2"}}
+
+            className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap">
                     <div className="flex flex-wrap w-full">
                         <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
@@ -148,8 +148,9 @@ function Home() {
                                         STEP 1
                                     </h2>
                                     <p className="leading-relaxed">
-                                        VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                                        bespoke try-hard cliche palo santo offal.
+                                    Understand your needs and create a clear plan.
+
+
                                     </p>
                                 </div>
                             </div>
@@ -175,9 +176,9 @@ function Home() {
                                         STEP 2
                                     </h2>
                                     <p className="leading-relaxed">
-                                        Vice migas literally kitsch +1 pok pok. Truffaut hot chicken
-                                        slow-carb health goth, vape typewriter.
-                                    </p>
+                                    Craft a custom design and prototype for approval.
+
+</p>
                                 </div>
                             </div>
                             <div className="flex relative pb-12">
@@ -203,8 +204,9 @@ function Home() {
                                         STEP 3
                                     </h2>
                                     <p className="leading-relaxed">
-                                        Coloring book nar whal glossier master cleanse umami. Salvia +1
-                                        master cleanse blog taiyaki.
+                                    Turn the design into a fully functional solution.
+
+
                                     </p>
                                 </div>
                             </div>
@@ -231,9 +233,9 @@ function Home() {
                                         STEP 4
                                     </h2>
                                     <p className="leading-relaxed">
-                                        VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                                        bespoke try-hard cliche palo santo offal.
-                                    </p>
+                                    Thorough testing and revisions based on your feedback.
+
+</p>
                                 </div>
                             </div>
                             <div className="flex relative">
@@ -256,15 +258,14 @@ function Home() {
                                         FINISH
                                     </h2>
                                     <p className="leading-relaxed">
-                                        Pitchfork ugh tattooed scenester echo park gastropub whatever
-                                        cold-pressed retro.
+                                    Finalize and deliver the project, ready for launch.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <img
                             className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-                            src="https://dummyimage.com/1200x500"
+                            src="https://cdn.pixabay.com/photo/2022/08/31/18/11/teamwork-7423950_640.jpg"
                             alt="step"
                         />
                     </div>
