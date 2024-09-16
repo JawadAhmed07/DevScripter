@@ -1,44 +1,48 @@
+// import { Button } from "antd";
+import Button from '@mui/material/Button';
+import featureImage from '../Images/feature1.png';
+import featureImage2 from '../Images/feature2.png';
+import featureImage3 from '../Images/feature3.png';
+import featureImage4 from '../Images/feature4.png';
+
 function Home() {
     return (
         <>
             {/* Main front page (compay description) */}
-            <section className="text-gray-600 body-font">
-                <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                            Before they sold out
-                            <br className="hidden lg:inline-block" />
-                            readymade gluten
+            <section
+            className="text-gray-600 body-font bg-cover bg-center" style={{ backgroundImage: 'url(https://cdn.pixabay.com/photo/2023/03/14/20/22/office-7853103_960_720.jpg)', 
+                backgroundColor:"#4A7766"
+            }}>
+                <div
+                className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-opacity-50 ">
+                    <div className="lg:flex-grow md:w-1/2 lg:pr-24 px-16 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                        <h1 className="title-font sm:text-5xl capitalize text-3xl mb-4 font-medium text-white">
+                            Best website <br /> development
+                            <br className="lg:inline-block" />
+                            Company{/* company agence service  yahn hide show animation dalni hy or 3word k sath */}
                         </h1>
-                        <p className="mb-8 leading-relaxed">
-                            Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
-                            plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk
-                            tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard
-                            chambray.
+
+                        <p className="mb-8 w-80 leading-relaxed text-white">
+                            Our web development service provide modern, responsive and user-friendly website that drive growth and showcase you business
                         </p>
                         <div className="flex justify-center">
-                            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                                Button
-                            </button>
-                            <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                                Button
-                            </button>
+                            {/* <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded capitalize text-lg">
+                                Request a Proposal
+                            </button> */}
+                            <Button variant="contained">Request a proposal </Button>
+
                         </div>
-                    </div>
-                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img
-                            className="object-cover object-center rounded"
-                            alt="hero"
-                            src="https://dummyimage.com/720x600"
-                        />
                     </div>
                 </div>
             </section>
+
             {/* 2nd page content
             https://w3torch.com/services/web-development/
             */}
-            <section className="text-gray-600 body-font">
-                <div className="container px-5 py-24 mx-auto">
+            <section
+            style={{backgroundColor: "#ECE7E2"}}
+            className="text-gray-600 body-font ">
+                <div className="container px-3 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
                         <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
                             ROOF PARTY POLAROID
@@ -53,100 +57,68 @@ function Home() {
                             ugh squid celiac humblebrag.
                         </p>
                     </div>
-                    <div className="flex flex-wrap">
-                        <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                            <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
-                                Shooting Stars
+                    <div className="flex flex-wrap justify-center">
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded shadow   border-opacity-60 mx-4 my-4
+                        hover:text-white
+                        transform transition duration-300 hover:scale-105 hover:shadow-lg"
+                            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
+                            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'white')}
+                        >
+                            <img src={featureImage} alt="Feature" />
+                            <h2 className="text-lg sm:text-xl my-2 text-gray-900 font-medium title-font mb-2">
+                                CUSTOMIZED SOLUTIONS
                             </h2>
-                            <p className="leading-relaxed text-base mb-4">
-                                Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                                hexagon disrupt edison bulbche.
+                            <p className="leading-relaxed my-2 text-base mb-4">
+                                Tailored web development solutions to meet your unique business needs.
                             </p>
-                            <a className="text-indigo-500 inline-flex items-center">
-                                Learn More
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    className="w-4 h-4 ml-2"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
                         </div>
-                        <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                            <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
-                                The Catalyzer
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded  shadow border-opacity-60 mx-4 my-4
+                        hover:text-white
+                        transform transition duration-300 hover:scale-105 hover:shadow-lg"
+                            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
+                            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'white')}>
+                            <img src={featureImage2} alt="Feature" />
+                            <h2 className="text-lg sm:text-xl my-2 text-gray-900 font-medium title-font mb-2">
+                                CREATIVE SOLUTION
+
                             </h2>
-                            <p className="leading-relaxed text-base mb-4">
-                                Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                                hexagon disrupt edison bulbche.
+                            <p className="leading-relaxed my-2 text-base mb-4">
+                                TInnovative and creative web designs that captivate and convert.
+
+
                             </p>
-                            <a className="text-indigo-500 inline-flex items-center">
-                                Learn More
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    className="w-4 h-4 ml-2"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
                         </div>
-                        <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                            <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
-                                Neptune
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded   shadow border-opacity-60 mx-4 my-4
+                        hover:text-white
+                        transform transition duration-300 hover:scale-105 hover:shadow-lg"
+                            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
+                            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'white')}>
+                            <img src={featureImage3} alt="Feature" />
+                            <h2 className="text-lg sm:text-xl my-2 text-gray-900 font-medium title-font mb-2">
+                                ROI-DRIVEN APPROACH
+
                             </h2>
-                            <p className="leading-relaxed text-base mb-4">
-                                Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                                hexagon disrupt edison bulbche.
+                            <p className="leading-relaxed my-2 text-base mb-4">
+                                Maximizing your investment with strategies focused on delivering high returns.
+
+
                             </p>
-                            <a className="text-indigo-500 inline-flex items-center">
-                                Learn More
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    className="w-4 h-4 ml-2"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
                         </div>
-                        <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                            <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
-                                Melanchole
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded shadow  border-opacity-60 mx-4 my-4
+                        hover:text-white
+                        transform transition duration-300 hover:scale-105 hover:shadow-lg"
+                            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
+                            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'white')}>
+                            <img src={featureImage4} alt="Feature" />
+                            <h2 className="text-lg sm:text-xl my-2 text-gray-900 font-medium title-font mb-2">
+                                EXPERT TEAM
                             </h2>
-                            <p className="leading-relaxed text-base mb-4">
-                                Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                                hexagon disrupt edison bulbche.
+                            <p className="leading-relaxed my-2 text-base mb-4">
+                                A team of seasoned professionals dedicated to your project's success.
                             </p>
-                            <a className="text-indigo-500 inline-flex items-center">
-                                Learn More
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    className="w-4 h-4 ml-2"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
                         </div>
                     </div>
+
                 </div>
             </section>
             {/* Third section (How we work) */}
