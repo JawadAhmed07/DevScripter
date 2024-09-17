@@ -61,7 +61,7 @@ function Home() {
     useEffect(() => {
         const interval = setInterval(() => {
             nextTestimonial();
-        }, 2000); // 5000ms = 5 seconds
+        }, 5000); // 5000ms = 5 seconds
         return () => clearInterval(interval); // Clear interval on component unmount
     }, [currentIndex]);
 
@@ -683,21 +683,18 @@ function Home() {
                 </div>
             </section>
             {/* seventhsection (client testimonial) */}
-            <section
+            {/* <section
             style={{ backgroundColor: "#4A7766" }}
             className="text-gray-600 body-font">
                 <h1 className="text-2xl text-center text-black capitalize"> Testimonials</h1>
                 <h1 className="text-4xl font-medium text-center text-gray-800 capitalize"> What our clients say</h1>
                 <div className='images flex align-center justify-center'>
-                {/* <img className='rounded h-16 w-16' src="https://w3torch.com/wp-content/uploads/2023/02/w3-torch-icon-258x258.png" alt="" /> */}
                 <img className='rounded h-24' src="https://w3torch.com/wp-content/uploads/2023/02/w3-torch-icon-258x258.png" alt="" />
-                {/* <img className='rounded h-16 w-16' src="https://w3torch.com/wp-content/uploads/2023/02/w3-torch-icon-258x258.png" alt="" /> */}
                 </div>
                 
                 <div className="container px-5 py-24 mx-auto">
                     <div className="relative flex items-center overflow-hidden ">
                         <div className="testimonial-container gap-2 ">
-                            {/* Render two testimonials side by side */}
                             {testimonials.slice(currentIndex, currentIndex + 2).map((testimonial, index) => (
                                 <div className="testimonial-card  border border-gray-700 " key={index}>
                                     <div className="text-center p-4">
@@ -716,23 +713,63 @@ function Home() {
                                 </div>
                             ))}
                         </div>
-                        {/* Previous button */}
                         <button
                             onClick={prevTestimonial}
                             className="absolute left-0 ml-5 text-2xl mt-5 hover:bg-gray-400 text-green-500 font-bold py-2 px-4 rounded-full">
-                            {/* &lt; */}
                             <ArrowBackIosNewSharpIcon />
                         </button>
-                        {/* Next button */}
                         <button
                             onClick={nextTestimonial}
                             className="absolute right-0 mr-5 text-2xl mt-5 hover:bg-gray-400 text-green-500 font-bold py-2 px-4 rounded-full">
-                            {/* &gt; */}
                             <ArrowForwardIosSharpIcon />
                         </button>
                     </div>
                 </div>
+            </section> */}
+            <section
+                style={{ backgroundColor: "#4A7766" }}
+                className="text-gray-600 body-font"
+            >
+                <h1 className="text-2xl text-center text-white capitalize mb-4">Testimonials</h1>
+                <h1 className="text-4xl font-medium text-center text-white capitalize mb-12">
+                    What our clients say
+                </h1>
+                <div className="container mx-auto px-5 py-10">
+                    <div className="testimonial-container">
+                        {testimonials.slice(currentIndex, currentIndex + 2).map((testimonial, index) => (
+                            <div className="testimonial-card" key={index}>
+                                <img
+                                    alt="testimonial"
+                                    className="object-cover object-center"
+                                    src={testimonial.img}
+                                />
+                                <p className="leading-relaxed text-gray-600">{testimonial.text}</p>
+                                <span className="inline-block" />
+                                <h2 className="text-gray-900 font-medium title-font tracking-wider">
+                                    {testimonial.name}
+                                </h2>
+                                <p className="text-gray-600">{testimonial.title} <br /> {testimonial.company}</p>
+                            </div>
+                        ))}
+                    </div>
+                    {/* Previous button */}
+                    <button
+                        onClick={prevTestimonial}
+                        className="absolute left-0 ml-5 text-2xl hover:bg-gray-400 text-green-500 font-bold px-4 rounded-full"
+                    >
+                        <ArrowBackIosNewSharpIcon />
+                    </button>
+                    {/* Next button */}
+                    <button
+                        onClick={nextTestimonial}
+                        className="absolute right-0 mr-5 text-2xl hover:bg-gray-400 text-green-500 font-bold px-4 rounded-full"
+                    >
+                        <ArrowForwardIosSharpIcon />
+                    </button>
+                </div>
             </section>
+
+
             {/* eight section (get in touch with us) */}
             <section className="text-gray-600 body-font relative">
                 <div className="container px-5 py-24 mx-auto">

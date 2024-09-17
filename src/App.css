@@ -1,28 +1,21 @@
-.testimonial-container {
+/* .testimonial-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    /* Ensure 2 testimonials are visible at once */
     width: 200%;
-    transform: translateX(0); /* Default position */
-}
+    transform: translateX(0); 
+} */
 
-.testimonial-card {
-    flex: 0 0 50%; /* Ensure each testimonial takes up half of the space */
+/* .testimonial-card { */
+    /* flex: 0 0 50%; 
     padding: 1rem;
     box-sizing: border-box;
     transition: all 0.5s ease;
     border-radius: 50px;
-    /* box-shadow: 5px 0px 80px 100px rgba(167, 189, 158, 0.432); */
     cursor: pointer;
-}
-.testimonial-card:hover{
-    /* background-color: #ECE7E2; */
-
-}
-/* style={{ backgroundColor: "#4A7766" }} */
-.testimonial-card img {
+} */
+/* .testimonial-card img {
     animation: fadeIn 0.5s ease-in-out;
-}
+} */
 
 @keyframes fadeIn {
     from {
@@ -31,4 +24,60 @@
     to {
         opacity: 1;
     }
+}
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 550px;
+    cursor: pointer;
+    margin: auto;
+    min-height: 450px; /* Ensures all cards are the same height */
+    justify-content: space-between; /* Makes sure all items have equal space */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card img {
+    border-color: #4A7766;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial-card h2 {
+    color: #4A7766;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    color: #333333;
+    text-align: center;
+    flex-grow: 1; /* Allows the text to grow and take up space */
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.inline-block {
+    background-color: #4A7766;
+    height: 4px;
+    width: 40px;
+    margin: 15px auto;
+    border-radius: 2px;
 }
