@@ -61,7 +61,7 @@ function Services() {
                             Web service pricing and plan
                         </h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">
-                        Choose the perfect plan tailored to your business needs, offering flexibility, security, and expert support for your online presence..
+                        Choose the perfect plan tailored to your business needs, offering flexibility, security, and expert support for your online presence.
                         </p>
                         {/* <div className="flex mx-auto border-2 border-indigo-500 rounded overflow-hidden mt-6">
                             <button className="py-1 px-4 bg-indigo-500 text-white focus:outline-none">
