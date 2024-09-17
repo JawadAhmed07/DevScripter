@@ -460,8 +460,7 @@ function Services() {
                     >
                         WAHT IF I'M NOT SATISFIED WITH THE WORK                  </AccordionSummary>
                     <AccordionDetails>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        Testing
                     </AccordionDetails>
                     <AccordionActions>
                         <Button>Cancel</Button>
