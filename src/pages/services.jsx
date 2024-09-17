@@ -269,12 +269,12 @@ function Services() {
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                            Master Cleanse Reliac Heirloom
+                        Our Recent Projects of Web Design
                         </h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                            gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-                            heard of them man bun deep jianbing selfies heirloom.
+                        "Take a look at some of our latest web design projects, showcasing creativity, functionality, and client satisfaction across various industries."
+
+
                         </p>
                     </div>
                     <div className="flex flex-wrap -m-4">
