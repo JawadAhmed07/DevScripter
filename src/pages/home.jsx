@@ -447,9 +447,9 @@ function Home() {
                                     alt="content"
                                 />
                                 <h2 className="text-xl text-gray-900 font-medium title-font mb-4">
-                                    E-commerce Development                                </h2>
+                                    E-commerce Development</h2>
                                 <p className="leading-relaxed text-base">
-                                    Our ecommerce web development service create customized online stores with user-friendly interfaces and secure payment gateways to help businesses grow their online sales.
+                                    Our ecommerce service create customized online stores with user-friendly interfaces and secure payment gateways to help businesses grow their online sales.
                                 </p>
                             </div>
                         </div>
@@ -466,7 +466,7 @@ function Home() {
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
                                     Website Maintainance                                </h2>
                                 <p className="leading-relaxed text-base">
-                                    Our website maintenance service ensures that your website is up-to-date, secure, and running smoothly, allowing you to focus on your business while we take care of the technical details.
+                                    Our website maintenance service ensures that your website is up-to-date, secure, responsive and running smoothly, allowing you to focus on your business while we take care of the technical details.
                                 </p>
                             </div>
                         </div>
@@ -683,49 +683,6 @@ function Home() {
                 </div>
             </section>
             {/* seventhsection (client testimonial) */}
-            {/* <section
-            style={{ backgroundColor: "#4A7766" }}
-            className="text-gray-600 body-font">
-                <h1 className="text-2xl text-center text-black capitalize"> Testimonials</h1>
-                <h1 className="text-4xl font-medium text-center text-gray-800 capitalize"> What our clients say</h1>
-                <div className='images flex align-center justify-center'>
-                <img className='rounded h-24' src="https://w3torch.com/wp-content/uploads/2023/02/w3-torch-icon-258x258.png" alt="" />
-                </div>
-                
-                <div className="container px-5 py-24 mx-auto">
-                    <div className="relative flex items-center overflow-hidden ">
-                        <div className="testimonial-container gap-2 ">
-                            {testimonials.slice(currentIndex, currentIndex + 2).map((testimonial, index) => (
-                                <div className="testimonial-card  border border-gray-700 " key={index}>
-                                    <div className="text-center p-4">
-                                        <img
-                                            alt="testimonial"
-                                            className="w-20 h-20 mb-4 object-cover object-center rounded-full border-2  mx-auto border-gray-200 bg-gray-100"
-                                            src={testimonial.img}
-                                        />
-                                        <p className="text-white  leading-relaxed text-lg">{testimonial.text}</p>
-                                        <span className="inline-block h-1 w-10 rounded bg-yellow-100 mt-6 mb-4" />
-                                        <h2 className="text-gray-900 font-medium title-font tracking-wider text-xl">
-                                            {testimonial.name}
-                                        </h2>
-                                        <p className="text-white">{testimonial.title} <br /> {testimonial.company}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <button
-                            onClick={prevTestimonial}
-                            className="absolute left-0 ml-5 text-2xl mt-5 hover:bg-gray-400 text-green-500 font-bold py-2 px-4 rounded-full">
-                            <ArrowBackIosNewSharpIcon />
-                        </button>
-                        <button
-                            onClick={nextTestimonial}
-                            className="absolute right-0 mr-5 text-2xl mt-5 hover:bg-gray-400 text-green-500 font-bold py-2 px-4 rounded-full">
-                            <ArrowForwardIosSharpIcon />
-                        </button>
-                    </div>
-                </div>
-            </section> */}
             <section
                 style={{ backgroundColor: "#4A7766" }}
                 className="text-gray-600 body-font"
@@ -768,8 +725,6 @@ function Home() {
                     </button>
                 </div>
             </section>
-
-
             {/* eight section (get in touch with us) */}
             <section className="text-gray-600 body-font relative">
                 <div className="container px-5 py-24 mx-auto">
@@ -835,7 +790,6 @@ function Home() {
                     </div>
                 </div>
             </section>
-
         </>
 
     )
