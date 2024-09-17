@@ -11,9 +11,15 @@
     padding: 1rem;
     box-sizing: border-box;
     transition: all 0.5s ease;
-    box-shadow: 5px 0px 80px 100px rgba(167, 189, 158, 0.432);
+    border-radius: 50px;
+    /* box-shadow: 5px 0px 80px 100px rgba(167, 189, 158, 0.432); */
+    cursor: pointer;
 }
+.testimonial-card:hover{
+    /* background-color: #ECE7E2; */
 
+}
+/* style={{ backgroundColor: "#4A7766" }} */
 .testimonial-card img {
     animation: fadeIn 0.5s ease-in-out;
 }

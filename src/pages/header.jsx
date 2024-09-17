@@ -28,15 +28,19 @@ function Header() {
                     <span className="ml-3 text-xl">DevScripters</span>
                 </a>
                 <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                    <Link className="mr-5 hover:text-gray-900" to="/">Home</Link>
-                    <Link className="mr-5 hover:text-gray-900" to="/services">Services</Link>
-                    <Link className="mr-5 hover:text-gray-900" to="/contact">Contact</Link>
-                    <Link className="mr-5 hover:text-gray-900" to="/blog">Blog</Link>
-                    <Link className="mr-5 hover:text-gray-900" to="/about">About Us</Link>
-                    <Link className="mr-5 hover:text-gray-900" to="/writeforus">Write For Us</Link>
+                    <Link className="mr-5 text-green-800 text-lg" to="/">Home</Link>
+                    <Link className="mr-5 text-green-800 text-lg" to="/services">Services</Link>
+                    <Link className="mr-5 text-green-800 text-lg" to="/contact">Contact</Link>
+                    <Link className="mr-5 text-green-800 text-lg" to="/blog">Blog</Link>
+                    <Link className="mr-5 text-green-800 text-lg" to="/about">About Us</Link>
+                    <Link className="mr-5 text-green-800 text-lg" to="/writeforus">Write For Us</Link>
                 </nav>
-                {/* <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-      Button
+                <button
+                            style={{ backgroundColor: "#4A7766" }}
+
+                className="inline-flex items-center text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+      Get a quote
+
       <svg
         fill="none"
         stroke="currentColor"
@@ -48,7 +52,7 @@ function Header() {
       >
         <path d="M5 12h14M12 5l7 7-7 7" />
       </svg>
-    </button> */}
+    </button>
             </div>
         </header>
 

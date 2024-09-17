@@ -61,7 +61,7 @@ function Home() {
     useEffect(() => {
         const interval = setInterval(() => {
             nextTestimonial();
-        }, 5000); // 5000ms = 5 seconds
+        }, 2000); // 5000ms = 5 seconds
         return () => clearInterval(interval); // Clear interval on component unmount
     }, [currentIndex]);
 
@@ -683,26 +683,35 @@ function Home() {
                 </div>
             </section>
             {/* seventhsection (client testimonial) */}
-            <section className="text-gray-600 body-font">
-                <h1 className="text-4xl text-center capitalize">What our clients say</h1>
+            <section
+            style={{ backgroundColor: "#4A7766" }}
+            className="text-gray-600 body-font">
+                <h1 className="text-2xl text-center text-black capitalize"> Testimonials</h1>
+                <h1 className="text-4xl font-medium text-center text-gray-800 capitalize"> What our clients say</h1>
+                <div className='images flex align-center justify-center'>
+                {/* <img className='rounded h-16 w-16' src="https://w3torch.com/wp-content/uploads/2023/02/w3-torch-icon-258x258.png" alt="" /> */}
+                <img className='rounded h-24' src="https://w3torch.com/wp-content/uploads/2023/02/w3-torch-icon-258x258.png" alt="" />
+                {/* <img className='rounded h-16 w-16' src="https://w3torch.com/wp-content/uploads/2023/02/w3-torch-icon-258x258.png" alt="" /> */}
+                </div>
+                
                 <div className="container px-5 py-24 mx-auto">
-                    <div className="relative flex items-center overflow-hidden">
+                    <div className="relative flex items-center overflow-hidden ">
                         <div className="testimonial-container gap-2 ">
                             {/* Render two testimonials side by side */}
                             {testimonials.slice(currentIndex, currentIndex + 2).map((testimonial, index) => (
-                                <div className="testimonial-card border " key={index}>
+                                <div className="testimonial-card  border border-gray-700 " key={index}>
                                     <div className="text-center p-4">
                                         <img
                                             alt="testimonial"
                                             className="w-20 h-20 mb-4 object-cover object-center rounded-full border-2  mx-auto border-gray-200 bg-gray-100"
                                             src={testimonial.img}
                                         />
-                                        <p className="leading-relaxed">{testimonial.text}</p>
-                                        <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4" />
-                                        <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
+                                        <p className="text-white  leading-relaxed text-lg">{testimonial.text}</p>
+                                        <span className="inline-block h-1 w-10 rounded bg-yellow-100 mt-6 mb-4" />
+                                        <h2 className="text-gray-900 font-medium title-font tracking-wider text-xl">
                                             {testimonial.name}
                                         </h2>
-                                        <p className="text-gray-500">{testimonial.title} <br /> {testimonial.company}</p>
+                                        <p className="text-white">{testimonial.title} <br /> {testimonial.company}</p>
                                     </div>
                                 </div>
                             ))}
