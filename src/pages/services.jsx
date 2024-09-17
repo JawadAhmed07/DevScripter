@@ -61,7 +61,7 @@ function Services() {
                             Web service pricing and plan
                         </h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">
-                        Choose the perfect plan tailored to your business needs, offering flexibility, security, and expert support for your online presence.
+                            Choose the perfect plan tailored to your business needs, offering flexibility, security, and expert support for your online presence.
                         </p>
                         {/* <div className="flex mx-auto border-2 border-indigo-500 rounded overflow-hidden mt-6">
                             <button className="py-1 px-4 bg-indigo-500 text-white focus:outline-none">
@@ -95,7 +95,7 @@ function Services() {
                                 </li>
                                 <li>Blog (3 Articles)
                                 </li>
-                                <li>Free support 1 month 
+                                <li>Free support 1 month
                                 </li>
                                 <li>Products up to 10 (for e-commerce)
                                 </li>
@@ -121,7 +121,7 @@ function Services() {
                         <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
                             <div className="h-full p-6 rounded-lg border-2 border-indigo-500 gap-2 flex flex-col relative overflow-hidden">
                                 <span className="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
-                               Popular
+                                    Popular
                                 </span>
                                 <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                                     Professional
@@ -146,7 +146,7 @@ function Services() {
                                 <li>Blog (5 Article)</li>
                                 <li>Hosting service included
                                 </li>
-                                <li>Free support 3 month 
+                                <li>Free support 3 month
                                 </li>
                                 <li>Products up to 30 (for e-commerce)
                                 </li>
@@ -269,10 +269,10 @@ function Services() {
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                        Our Recent Projects of Web Design
+                            Our Recent Projects of Web Design
                         </h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                        "Take a look at some of our latest web design projects, showcasing creativity, functionality, and client satisfaction across various industries."
+                            "Take a look at some of our latest web design projects, showcasing creativity, functionality, and client satisfaction across various industries."
 
 
                         </p>
@@ -414,8 +414,9 @@ function Services() {
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1-content"
                         id="panel1-header"
+
                     >
-                        Accordion 1
+                        WHAT KIND OF DIGITAL SERVICE DO YOU PROVIDE
                     </AccordionSummary>
                     <AccordionDetails>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -428,7 +429,7 @@ function Services() {
                         aria-controls="panel2-content"
                         id="panel2-header"
                     >
-                        Accordion 2
+                        CAN YOU INTEGRATE E-COMMERCE FUNCTIONALITY INTO MY WEBSITE
                     </AccordionSummary>
                     <AccordionDetails>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -441,8 +442,7 @@ function Services() {
                         aria-controls="panel3-content"
                         id="panel3-header"
                     >
-                        Accordion Actions
-                    </AccordionSummary>
+                        DO YOU PROVIDE WEB HOSTING                    </AccordionSummary>
                     <AccordionDetails>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                         malesuada lacus ex, sit amet blandit leo lobortis eget.
