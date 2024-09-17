@@ -4,8 +4,75 @@ import featureImage from '../Images/feature1.png';
 import featureImage2 from '../Images/feature2.png';
 import featureImage3 from '../Images/feature3.png';
 import featureImage4 from '../Images/feature4.png';
-
+import { useEffect, useState } from 'react';
+import '../App.css'
+import ArrowBackIosNewSharpIcon from '@mui/icons-material/ArrowBackIosNewSharp';
+import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 function Home() {
+
+    const testimonials = [
+        {
+            img: "https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-2eabcc3/thriveagency.com/files/Brandon-O-e1482942080144.jpg",
+            text: "Since having our new website built by Thrive, we have seen a 200% increase in the number of online contact forms being filled out and returned to us. The end result was a website that is attractive, organized and effective.",
+            name: "Brandon O’Brien",
+            title: "-Senior Product Designer",
+            company: "Demilec (USA), LLC"
+        },
+        {
+            img: "https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-2eabcc3/thriveagency.com/files/Kee-Service-e1482945003957.jpg",
+            text: "We at Kee Service were very impressed with the all aspects of our new website. We would highly reccomend Thrive to anyone looking to build a new website.",
+            name: "Ross Asher",
+            title: "- Owner",
+            company: "Kee Service Co."
+        },
+        {
+            img: "https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-2eabcc3/thriveagency.com/files/John-C-e1482943709835.jpg",
+            text: "This team exceeded our expectations with the website redesign. They delivered a clean, modern platform that perfectly fits our brand, and our customer engagement has soared. We’ve seen a 150% increase in inquiries since the update. Highly recommend them for top-notch web development!",
+            name: "Alex Martinez",
+            title: "-Marketing Director",
+            company: " Brightwave Solutions"
+        },
+        {
+            img: "https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-2eabcc3/thriveagency.com/files/Cathy-O-e1482945620792.png",
+            text: "Thrive listened to everything we needed and wanted in a new website, then delivered it! Our new website is fun, exciting and easy to use for me and our audiences. I have gone through website redesigns before, and by far, this one was the easiest and least painful. I was listened to and respected through every step. We couldn’t be happier with our new website",
+            name: "Cathy O’Neal",
+            title: "-Communications Director",
+            company: "Levitt Pavilion Arlington, TX"
+        },
+        {
+            img: "https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-2eabcc3/thriveagency.com/files/Debi-Maerz.jpg",
+            text: "Quick response to changes/questions/ideas. Someone always answers right away.",
+            name: "Debi Maerz",
+            title: "Small business women",
+            company: "Bakke Graduate Institute."
+        },
+        {
+            img: "https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-2eabcc3/thriveagency.com/files/Melissa-M-e1482946329588.jpg",
+            text: "We have been very happy with our new website! It looks professional and very easy to navigate. Thrive handles things efficiently and is available for any questions we have.",
+            name: "Melissa Montiel",
+            title: "-Marketing Director",
+            company: "Sterling Protective Services, Inc."
+        },
+    ];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    // Move to next testimonial automatically after 5 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextTestimonial();
+        }, 5000); // 5000ms = 5 seconds
+        return () => clearInterval(interval); // Clear interval on component unmount
+    }, [currentIndex]);
+
+    const nextTestimonial = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    };
+
+    const prevTestimonial = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
+    };
+
     return (
         <>
             {/* Main front page (compay description) */}
@@ -36,10 +103,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* 2nd page content
-            https://w3torch.com/services/web-development/
-            */}
-
+            {/* 2nd page content*/}
             <section
                 style={{ backgroundColor: "#ECE7E2" }}
                 // style={{backgroundColor: "#4A7766"}}
@@ -57,7 +121,7 @@ function Home() {
                         </p>
                     </div>
                     <div className="flex flex-wrap justify-center">
-                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded shadow cursor-pointer  border-opacity-60 mx-4 my-4
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded shadow cursor-pointer bg-white border-opacity-60 mx-4 my-4
                         hover:text-white
                         transform transition duration-300 hover:scale-105 hover:shadow-lg"
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
@@ -71,7 +135,7 @@ function Home() {
                                 Tailored web development solutions to meet your unique business needs.
                             </p>
                         </div>
-                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded  shadow border-opacity-60 mx-4 cursor-pointer my-4
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded bg-white  shadow border-opacity-60 mx-4 cursor-pointer my-4
                         hover:text-white
                         transform transition duration-300 hover:scale-105 hover:shadow-lg"
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
@@ -87,7 +151,7 @@ function Home() {
 
                             </p>
                         </div>
-                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded   shadow border-opacity-60 mx-4 cursor-pointer my-4
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded  bg-white  shadow border-opacity-60 mx-4 cursor-pointer my-4
                         hover:text-white
                         transform transition duration-300 hover:scale-105 hover:shadow-lg"
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
@@ -103,7 +167,7 @@ function Home() {
 
                             </p>
                         </div>
-                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded shadow  border-opacity-60 mx-4 cursor-pointer my-4
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded bg-white shadow  border-opacity-60 mx-4 cursor-pointer my-4
                         hover:text-white
                         transform transition duration-300 hover:scale-105 hover:shadow-lg"
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
@@ -123,7 +187,7 @@ function Home() {
             {/* Third section (How we work) */}
             <section
                 // style={{ backgroundColor: "#ECE7E2" }}
-                style={{backgroundColor: "#4A7766"}}
+                style={{ backgroundColor: "#4A7766" }}
 
                 className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap">
@@ -319,7 +383,7 @@ function Home() {
             </section>
             {/* Fifth section (service we offer) */}
             <section
-            style={{backgroundColor:"#4A7766"}} className="text-gray-600 body-font">
+                style={{ backgroundColor: "#4A7766" }} className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap w-full mb-20">
                         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -335,11 +399,13 @@ function Home() {
                         </p>
                     </div>
                     <div className="flex flex-wrap -m-4">
-                        <div className="xl:w-1/4 md:w-1/2 p-4 ">
-                            <div className="p-6 rounded-lg  hover:text-white
+                        <div className="xl:w-1/4 md:w-1/2 p-4  ">
+                            <div className="p-6 rounded-lg bg-white  hover:text-black
                         transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer border shadow"
-                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
-                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E9DFD8')}>
+                                // onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
+                                // onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E9DFD8')}>
+                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#E9DFD8')}
+                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'white')}>
                                 <img
                                     className=" rounded w-16 object-cover object-center mb-6"
                                     src="https://w3torch.com/wp-content/uploads/2023/02/core-development-company.png"
@@ -352,11 +418,11 @@ function Home() {
                                 </p>
                             </div>
                         </div>
-                        <div className="xl:w-1/4 md:w-1/2 p-4">
-                            <div className="p-6 rounded-lg  hover:text-white
+                        <div className="xl:w-1/4 md:w-1/2 p-4 ">
+                            <div className="p-6 rounded-lg bg-white  hover:text-black
                         transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer border shadow"
-                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
-                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E9DFD8')}>
+                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#E9DFD8')}
+                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'white')}>
                                 <img
                                     className="rounded w-16 object-cover object-center mb-6"
                                     src="https://w3torch.com/wp-content/uploads/2023/02/wordpress-development-agency.png"
@@ -370,11 +436,11 @@ function Home() {
                                 </p>
                             </div>
                         </div>
-                        <div className="xl:w-1/4 md:w-1/2 p-4">
-                            <div className="p-6 rounded-lg  hover:text-white
+                        <div className="xl:w-1/4 md:w-1/2 p-4 ">
+                            <div className="p-6 rounded-lg bg-white  hover:text-black
                         transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer border shadow"
-                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
-                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E9DFD8')}>
+                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#E9DFD8')}
+                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'white')}>
                                 <img
                                     className="rounded w-16 object-cover object-center mb-6"
                                     src="https://w3torch.com/wp-content/uploads/2023/02/ecommerce-development-company.png"
@@ -387,11 +453,11 @@ function Home() {
                                 </p>
                             </div>
                         </div>
-                        <div className="xl:w-1/4 md:w-1/2 p-4">
-                            <div className="p-6 rounded-lg  hover:text-white
+                        <div className="xl:w-1/4 md:w-1/2 p-4 ">
+                            <div className="p-6 rounded-lg bg-white  hover:text-black
                         transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer border shadow"
-                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
-                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E9DFD8')}>
+                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#E9DFD8')}
+                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'white')}>
                                 <img
                                     className="rounded w-16 object-cover object-center mb-6"
                                     src="https://w3torch.com/wp-content/uploads/2023/02/website-maintenance-company.png"
@@ -618,69 +684,43 @@ function Home() {
             </section>
             {/* seventhsection (client testimonial) */}
             <section className="text-gray-600 body-font">
-                <h1 className="text-4xl text-center capitalize">What our client says</h1>
+                <h1 className="text-4xl text-center capitalize">What our clients say</h1>
                 <div className="container px-5 py-24 mx-auto">
-                    <div className="flex flex-wrap -m-4">
-                        <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
-                            <div className="h-full text-center">
-                                <img
-                                    alt="testimonial"
-                                    className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                                    src="https://dummyimage.com/302x302"
-                                />
-                                <p className="leading-relaxed">
-                                    Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki
-                                    taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman
-                                    taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid
-                                    fanny pack vaporware.
-                                </p>
-                                <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4" />
-                                <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                                    HOLDEN CAULFIELD
-                                </h2>
-                                <p className="text-gray-500">Senior Product Designer</p>
-                            </div>
+                    <div className="relative flex items-center overflow-hidden">
+                        <div className="testimonial-container gap-2 ">
+                            {/* Render two testimonials side by side */}
+                            {testimonials.slice(currentIndex, currentIndex + 2).map((testimonial, index) => (
+                                <div className="testimonial-card border " key={index}>
+                                    <div className="text-center p-4">
+                                        <img
+                                            alt="testimonial"
+                                            className="w-20 h-20 mb-4 object-cover object-center rounded-full border-2  mx-auto border-gray-200 bg-gray-100"
+                                            src={testimonial.img}
+                                        />
+                                        <p className="leading-relaxed">{testimonial.text}</p>
+                                        <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4" />
+                                        <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
+                                            {testimonial.name}
+                                        </h2>
+                                        <p className="text-gray-500">{testimonial.title} <br /> {testimonial.company}</p>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                        <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
-                            <div className="h-full text-center">
-                                <img
-                                    alt="testimonial"
-                                    className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                                    src="https://dummyimage.com/300x300"
-                                />
-                                <p className="leading-relaxed">
-                                    Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki
-                                    taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman
-                                    taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid
-                                    fanny pack vaporware.
-                                </p>
-                                <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4" />
-                                <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                                    ALPER KAMU
-                                </h2>
-                                <p className="text-gray-500">UI Develeoper</p>
-                            </div>
-                        </div>
-                        <div className="lg:w-1/3 lg:mb-0 p-4">
-                            <div className="h-full text-center">
-                                <img
-                                    alt="testimonial"
-                                    className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                                    src="https://dummyimage.com/305x305"
-                                />
-                                <p className="leading-relaxed">
-                                    Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki
-                                    taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman
-                                    taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid
-                                    fanny pack vaporware.
-                                </p>
-                                <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4" />
-                                <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                                    HENRY LETHAM
-                                </h2>
-                                <p className="text-gray-500">CTO</p>
-                            </div>
-                        </div>
+                        {/* Previous button */}
+                        <button
+                            onClick={prevTestimonial}
+                            className="absolute left-0 ml-5 text-2xl mt-5 hover:bg-gray-400 text-green-500 font-bold py-2 px-4 rounded-full">
+                            {/* &lt; */}
+                            <ArrowBackIosNewSharpIcon />
+                        </button>
+                        {/* Next button */}
+                        <button
+                            onClick={nextTestimonial}
+                            className="absolute right-0 mr-5 text-2xl mt-5 hover:bg-gray-400 text-green-500 font-bold py-2 px-4 rounded-full">
+                            {/* &gt; */}
+                            <ArrowForwardIosSharpIcon />
+                        </button>
                     </div>
                 </div>
             </section>

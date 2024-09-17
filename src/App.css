@@ -1,0 +1,28 @@
+.testimonial-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* Ensure 2 testimonials are visible at once */
+    width: 200%;
+    transform: translateX(0); /* Default position */
+}
+
+.testimonial-card {
+    flex: 0 0 50%; /* Ensure each testimonial takes up half of the space */
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    box-shadow: 5px 0px 80px 100px rgba(167, 189, 158, 0.432);
+}
+
+.testimonial-card img {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
