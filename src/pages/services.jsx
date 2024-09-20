@@ -6,6 +6,18 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
 import EmailIcon from '@mui/icons-material/Email';
+import landingPage from '../Images/landingPage.png';
+import airmax from '../Images/airmax.png';
+import brothersbond from '../Images/brothersbond.png';
+import fluid from '../Images/fluid.png';
+import lightup from '../Images/lightup.png';
+import monstera from '../Images/monstera.png';
+import shery from '../Images/shery.png';
+import websitedes from '../Images/websitedes.png';
+import websitedesign from '../Images/websitedesign.png';
+
+// import featureImage4 from '../Images/feature4.png';
+
 
 
 function Services() {
@@ -265,7 +277,7 @@ function Services() {
                 </div>
             </section>
             {/* Our projects */}
-            <section className="text-gray-600 body-font">
+            {/* <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
@@ -282,10 +294,10 @@ function Services() {
                             <div className="flex relative">
                                 <img
                                     alt="gallery"
-                                    className="absolute inset-0 w-full h-full object-cover object-center"
-                                    src="https://dummyimage.com/600x360"
+                                    className="absolute inset-0 w-full h-96 object-cover object-center"
+                                    src={websitedes}
                                 />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-0">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                                         THE SUBTITLE
                                     </h2>
@@ -303,15 +315,15 @@ function Services() {
                             <div className="flex relative">
                                 <img
                                     alt="gallery"
-                                    className="absolute inset-0 w-full h-full object-cover object-center"
-                                    src="https://dummyimage.com/601x361"
+                                    className="absolute inset-0 w-full h-auto  object-cover object-center"
+                                    src={lightup}
                                 />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-0">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                                         THE SUBTITLE
                                     </h2>
                                     <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                                        The Catalyzer
+                                        Shooting Stars
                                     </h1>
                                     <p className="leading-relaxed">
                                         Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
@@ -324,15 +336,15 @@ function Services() {
                             <div className="flex relative">
                                 <img
                                     alt="gallery"
-                                    className="absolute inset-0 w-full h-full object-cover object-center"
-                                    src="https://dummyimage.com/603x363"
+                                    className="absolute inset-0 w-full h-96 object-cover object-center"
+                                    src={websitedesign}
                                 />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-0">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                                         THE SUBTITLE
                                     </h2>
                                     <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                                        The 400 Blows
+                                        Shooting Stars
                                     </h1>
                                     <p className="leading-relaxed">
                                         Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
@@ -345,15 +357,15 @@ function Services() {
                             <div className="flex relative">
                                 <img
                                     alt="gallery"
-                                    className="absolute inset-0 w-full h-full object-cover object-center"
-                                    src="https://dummyimage.com/602x362"
+                                    className="absolute inset-0 w-full h-96 my-40 object-cover object-center"
+                                    src={shery}
                                 />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-0">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                                         THE SUBTITLE
                                     </h2>
                                     <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                                        Neptune
+                                        Shooting Stars
                                     </h1>
                                     <p className="leading-relaxed">
                                         Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
@@ -366,15 +378,15 @@ function Services() {
                             <div className="flex relative">
                                 <img
                                     alt="gallery"
-                                    className="absolute inset-0 w-full h-full object-cover object-center"
-                                    src="https://dummyimage.com/605x365"
+                                    className="absolute inset-0 w-full h-96 my-40 object-cover object-center"
+                                    src={monstera}
                                 />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-0">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                                         THE SUBTITLE
                                     </h2>
                                     <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                                        Holden Caulfield
+                                        Shooting Stars
                                     </h1>
                                     <p className="leading-relaxed">
                                         Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
@@ -387,15 +399,15 @@ function Services() {
                             <div className="flex relative">
                                 <img
                                     alt="gallery"
-                                    className="absolute inset-0 w-full h-full object-cover object-center"
-                                    src="https://dummyimage.com/606x366"
+                                    className="absolute inset-0 w-full h-96 object-cover object-center"
+                                    src={fluid}
                                 />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-0">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                                         THE SUBTITLE
                                     </h2>
                                     <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                                        Alper Kamu
+                                        Shooting Stars
                                     </h1>
                                     <p className="leading-relaxed">
                                         Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
@@ -404,11 +416,158 @@ function Services() {
                                 </div>
                             </div>
                         </div>
+                        <div className="lg:w-1/3 sm:w-1/2 p-4">
+                            <div className="flex relative">
+                                <img
+                                    alt="gallery"
+                                    className="absolute inset-0 w-full h-96 object-cover object-center"
+                                    src={brothersbond}
+                                />
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-0">
+                                    <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                                        THE SUBTITLE
+                                    </h2>
+                                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                                        Shooting Stars
+                                    </h1>
+                                    <p className="leading-relaxed">
+                                        Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                                        microdosing tousled waistcoat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="lg:w-1/3 sm:w-1/2 p-4">
+                            <div className="flex relative">
+                                <img
+                                    alt="gallery"
+                                    className="absolute inset-0 w-full h-96 object-cover object-center"
+                                    src={landingPage}
+                                />
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-0">
+                                    <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                                        THE SUBTITLE
+                                    </h2>
+                                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                                        Shooting Stars
+                                    </h1>
+                                    <p className="leading-relaxed">
+                                        Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                                        microdosing tousled waistcoat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-            </section>
+            </section> */}
+            {/* Our projects */}
+            <div className="p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-5 gap-6">
+                <div className="relative">
+                    <img
+                        src={lightup}
+                        alt="Project 1"
+                        className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
+                        <h2 className="text-lg font-bold">Project Name</h2>
+                        <p className="mt-2 text-sm">React, Firebase, TailwindCSS</p>
+                        <p className="mt-4 text-sm">This project involves creating a fully responsive e-commerce website using React and Firebase for real-time data management.</p>
+                    </div>
+                </div>
+                <div className="relative">
+                    <img
+                        src={shery}
+                        alt="Project 2"
+                        className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
+                        <h2 className="text-lg font-bold">Project Name</h2>
+                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
+                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
+                    </div>
+                </div>
+                <div className="relative">
+                    <img
+                        src={fluid}
+                        alt="Project 2"
+                        className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
+                        <h2 className="text-lg font-bold">Project Name</h2>
+                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
+                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
+                    </div>
+                </div>
+                <div className="relative">
+                    <img
+                        src={websitedes}
+                        alt="Project 2"
+                        className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
+                        <h2 className="text-lg font-bold">Project Name</h2>
+                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
+                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
+                    </div>
+                </div>
+                <div className="relative">
+                    <img
+                        src={landingPage}
+                        alt="Project 2"
+                        className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
+                        <h2 className="text-lg font-bold">Project Name</h2>
+                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
+                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
+                    </div>
+                </div>
+                <div className="relative">
+                    <img
+                        src={websitedesign}
+                        alt="Project 2"
+                        className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
+                        <h2 className="text-lg font-bold">Project Name</h2>
+                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
+                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
+                    </div>
+                </div>
+                <div className="relative">
+                    <img
+                        src={airmax}
+                        alt="Project 2"
+                        className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
+                        <h2 className="text-lg font-bold">Project Name</h2>
+                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
+                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
+                    </div>
+                </div>
+                <div className="relative">
+                    <img
+                        src={brothersbond}
+                        alt="Project 2"
+                        className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
+                        <h2 className="text-lg font-bold">Project Name</h2>
+                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
+                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
+                    </div>
+                </div>
+
+                {/* Add more cards for additional projects */}
+            </div>
+
+
+
             {/* Accordion */}
-            <div>
+            {/* <div>
                 <Accordion>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
@@ -467,7 +626,7 @@ function Services() {
                         <Button>Agree</Button>
                     </AccordionActions>
                 </Accordion>
-            </div>
+            </div> */}
 
 
         </>
