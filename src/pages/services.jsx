@@ -15,6 +15,7 @@ import monstera from '../Images/monstera.png';
 import shery from '../Images/shery.png';
 import websitedes from '../Images/websitedes.png';
 import websitedesign from '../Images/websitedesign.png';
+import websitedesign3 from '../Images/websitedesign3.png';
 
 // import featureImage4 from '../Images/feature4.png';
 
@@ -471,9 +472,9 @@ function Services() {
                         className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
-                        <h2 className="text-lg font-bold">Project Name</h2>
-                        <p className="mt-2 text-sm">React, Firebase, TailwindCSS</p>
-                        <p className="mt-4 text-sm">This project involves creating a fully responsive e-commerce website using React and Firebase for real-time data management.</p>
+                        <h2 className="text-lg font-bold">Home accessories website</h2>
+                        <p className="mt-2 text-sm">HTML,CSS, JS & FIREBASE</p>
+                        <p className="mt-4 text-sm">This project involves creating a fully responsive e-commerce website using JS and Firebase for real-time data management.</p>
                     </div>
                 </div>
                 <div className="relative">
@@ -560,7 +561,18 @@ function Services() {
                         <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
                     </div>
                 </div>
-
+                <div className="relative">
+                    <img
+                        src={websitedesign3}
+                        alt="Project 2"
+                        className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
+                        <h2 className="text-lg font-bold">Project Name</h2>
+                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
+                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
+                    </div>
+                </div>
                 {/* Add more cards for additional projects */}
             </div>
 
