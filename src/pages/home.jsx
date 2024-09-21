@@ -10,6 +10,9 @@ import featureImage2 from '../Images/feature2.png';
 import featureImage3 from '../Images/feature3.png';
 import thinking from '../Images/thinking.png';
 import featureImage4 from '../Images/feature4.png';
+import blog1 from '../Images/blog1.png';
+import blog2 from '../Images/blog2.png';
+import blog3 from '../Images/blog3.png';
 import { useEffect, useState } from 'react';
 import '../App.css'
 import ArrowBackIosNewSharpIcon from '@mui/icons-material/ArrowBackIosNewSharp';
@@ -496,15 +499,18 @@ function Home() {
                 </div>
             </section>
             {/* sixth section (our recent blogs) */}
-            <section className="text-gray-600 body-font">
-                <h1 className="text-center text-4xl capitalize">Our recent blogs</h1>
-                <div className="container px-5 py-24 mx-auto">
+            <section
+            style={{ backgroundColor: "#ECE7E2" }}
+            className="text-gray-600 body-font">
+                <h1 className="text-center text-green-700 align-center justify-center pt-10 text-4xl capitalize">"Explore the Latest in Web Development and SEO"
+                </h1>
+                <div className="container px-5 py-24 -my-10 mx-auto">
                     <div className="flex flex-wrap -m-4">
                         <div className="p-4 md:w-1/3">
-                            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <div className="h-full border-2 border-gray-400 border-opacity-60 rounded-lg overflow-hidden">
                                 <img
-                                    className="lg:h-48 md:h-36 w-full object-cover object-center"
-                                    src="https://dummyimage.com/720x400"
+                                    className=" h-60 w-full object-cover object-center"
+                                    src={blog1}
                                     alt="blog"
                                 />
                                 <div className="p-6">
@@ -568,10 +574,10 @@ function Home() {
                             </div>
                         </div>
                         <div className="p-4 md:w-1/3">
-                            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <div className="h-full border-2 border-gray-400 border-opacity-60 rounded-lg overflow-hidden">
                                 <img
-                                    className="lg:h-48 md:h-36 w-full object-cover object-center"
-                                    src="https://dummyimage.com/721x401"
+                                    className="h-60 w-full object-cover object-center"
+                                    src={blog2}
                                     alt="blog"
                                 />
                                 <div className="p-6">
@@ -601,7 +607,7 @@ function Home() {
                                                 <path d="M12 5l7 7-7 7" />
                                             </svg>
                                         </a>
-                                        <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                        <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-400">
                                             <svg
                                                 className="w-4 h-4 mr-1"
                                                 stroke="currentColor"
@@ -637,8 +643,8 @@ function Home() {
                         <div className="p-4 md:w-1/3">
                             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <img
-                                    className="lg:h-48 md:h-36 w-full object-cover object-center"
-                                    src="https://dummyimage.com/722x402"
+                                    className="h-60 w-full object-cover object-center"
+                                    src={blog3}
                                     alt="blog"
                                 />
                                 <div className="p-6">
@@ -748,9 +754,15 @@ function Home() {
                 </div>
             </section>
             {/* Accordion */}
-            <section className='flex mt-10 justify-center align-center'>
-                <div className="accordionside align-center mt-20 w-auto">
-                    <div>
+            <section 
+            style={{ backgroundColor: "#ECE7E2" }}
+            className='flex justify-center align-center'>
+                <div className="accordionside align-center pl-16 mt-8 w-auto">
+                    <div className='px-10 py-5'>
+                        <h1 className='font-medium text-lg uppercase py-2'>Faq's</h1>
+                        <h1 className='text-4xl font-medium text-orange-700'>Frequently asked <br /> question</h1>
+                    </div>
+                    <div className='px-10'>
                         <Accordion
                             expanded={expanded === 'panel1'}
                             onChange={handleChange('panel1')}
@@ -861,27 +873,31 @@ function Home() {
                         </Accordion>
                     </div>
                 </div>
-                <div className="imageside overflow-hidden w-auto ">
-                    <img className='w-auto h-auto mx-10' src="https://w3torch.com/wp-content/uploads/2023/02/web-development-services-1.png" alt="" />
+                <div className="imageside overflow-hidden w-full ">
+                    <img className='w-auto h-auto mt-10 pl-16 ' src="https://w3torch.com/wp-content/uploads/2023/02/web-development-services-1.png" alt="" />
                 </div>
             </section>
             {/* eight section (get in touch with us) */}
-            <section className="text-gray-600 body-font relative">
+            <section
+            style={{ backgroundColor: "#4A7766" }}
+            className="text-white body-font proposal relative">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-12">
-                        <h1 className="sm:text-3xl capitalize text-2xl font-medium title-font mb-4 text-gray-900">
-                            Get in touch with us
+                        <h6 className="capitalize text-lg font-medium title-font mb-4 text-white">
+                            Interested?
+                        </h6>
+                        <h1 className="sm:text-3xl capitalize text-2xl font-medium title-font mb-4 text-white">
+                            Request a free proposal
                         </h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                            gentrify.
+                            Our team is here to provide you with expert guidance and support you need to succeed in the digital age
                         </p>
                     </div>
                     <div className="lg:w-1/2 md:w-2/3 mx-auto">
                         <div className="flex flex-wrap -m-2">
                             <div className="p-2 w-1/2">
                                 <div className="relative">
-                                    <label htmlFor="name" className="leading-7 text-sm text-gray-600">
+                                    <label htmlFor="name" className="leading-7 text-md text-white">
                                         Name
                                     </label>
                                     <input
@@ -894,7 +910,7 @@ function Home() {
                             </div>
                             <div className="p-2 w-1/2">
                                 <div className="relative">
-                                    <label htmlFor="email" className="leading-7 text-sm text-gray-600">
+                                    <label htmlFor="email" className="leading-7 text-md text-white">
                                         Email
                                     </label>
                                     <input
@@ -905,11 +921,38 @@ function Home() {
                                     />
                                 </div>
                             </div>
+                            <div className="p-2 w-1/2">
+                                <div className="relative">
+                                    <label htmlFor="Phone" className="leading-7 text-md text-white">
+                                        Phone
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="phone"
+                                        name="phone"
+                                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    />
+                                </div>
+                            </div>
+                            <div className="p-2 w-1/2">
+                                <div className="relative">
+                                    <label htmlFor="Url" className="leading-7 text-md text-white">
+                                        URL (optional)
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="url"
+                                        placeholder='Enter your website URL'
+                                        name="url"
+                                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    />
+                                </div>
+                            </div>
                             <div className="p-2 w-full">
                                 <div className="relative">
                                     <label
                                         htmlFor="message"
-                                        className="leading-7 text-sm text-gray-600"
+                                        className="leading-7 text-sm text-white"
                                     >
                                         Message
                                     </label>
@@ -922,8 +965,8 @@ function Home() {
                                 </div>
                             </div>
                             <div className="p-2 w-full">
-                                <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                                    Button
+                                <button className="flex  text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                                    Send Request
                                 </button>
                             </div>
                         </div>

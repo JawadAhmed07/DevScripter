@@ -21,7 +21,7 @@ import websitedesign3 from '../Images/websitedesign3.png';
 
 
 
-function Services() {
+function Webdevelopment() {
     return (
         <>
             {/* Main intro section */}
@@ -464,125 +464,86 @@ function Services() {
                 </div>
             </section> */}
             {/* Our projects */}
-            <div className="p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-5 gap-6">
-                <div className="relative">
-                    <img
-                        src={lightup}
-                        alt="Project 1"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
-                        <h2 className="text-lg font-bold">Home accessories website</h2>
-                        <p className="mt-2 text-sm">HTML,CSS, JS & FIREBASE</p>
-                        <p className="mt-4 text-sm">This project involves creating a fully responsive e-commerce website using JS and Firebase for real-time data management.</p>
-                    </div>
-                </div>
-                <div className="relative">
-                    <img
-                        src={shery}
-                        alt="Project 2"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
-                        <h2 className="text-lg font-bold">Project Name</h2>
-                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
-                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
-                    </div>
-                </div>
-                <div className="relative">
-                    <img
-                        src={fluid}
-                        alt="Project 2"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
-                        <h2 className="text-lg font-bold">Project Name</h2>
-                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
-                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
-                    </div>
-                </div>
-                <div className="relative">
-                    <img
-                        src={websitedes}
-                        alt="Project 2"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
-                        <h2 className="text-lg font-bold">Project Name</h2>
-                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
-                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
-                    </div>
-                </div>
-                <div className="relative">
-                    <img
-                        src={landingPage}
-                        alt="Project 2"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
-                        <h2 className="text-lg font-bold">Project Name</h2>
-                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
-                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
-                    </div>
-                </div>
-                <div className="relative">
-                    <img
-                        src={websitedesign}
-                        alt="Project 2"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
-                        <h2 className="text-lg font-bold">Project Name</h2>
-                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
-                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
-                    </div>
-                </div>
-                <div className="relative">
-                    <img
-                        src={airmax}
-                        alt="Project 2"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
-                        <h2 className="text-lg font-bold">Project Name</h2>
-                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
-                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
-                    </div>
-                </div>
-                <div className="relative">
-                    <img
-                        src={brothersbond}
-                        alt="Project 2"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
-                        <h2 className="text-lg font-bold">Project Name</h2>
-                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
-                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
-                    </div>
-                </div>
-                <div className="relative">
-                    <img
-                        src={websitedesign3}
-                        alt="Project 2"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-white p-6">
-                        <h2 className="text-lg font-bold">Project Name</h2>
-                        <p className="mt-2 text-sm">HTML, CSS, JavaScript</p>
-                        <p className="mt-4 text-sm">A dynamic blog platform allowing users to post content, leveraging JavaScript and Firebase for user authentication and data management.</p>
-                    </div>
-                </div>
-                {/* Add more cards for additional projects */}
-            </div>
+            <section  
+            // style={{ backgroundColor: "#4A7770" }}
+            >
+                <div className="flex flex-col text-center mt-5 text-3xl w-full ">
+                    <h1 className="text-4xl font-medium title-font mb-4 text-blue-800">
+                        Our Recent Projects of Web Design
+                    </h1>
+                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+                        "Take a look at some of our latest web design projects, showcasing creativity, functionality, and client satisfaction across various industries."
 
 
-
-            {/* Accordion */}
-           
-
-
+                    </p>
+                </div>
+                <div className="p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-5 gap-6">
+                    <div className="relative">
+                        <img
+                            src={lightup}
+                            alt="Project 1"
+                            className="w-full h-full object-cover rounded-lg shadow-md"
+                        />
+                    </div>
+                    <div className="relative">
+                        <img
+                            src={shery}
+                            alt="Project 2"
+                            className="w-full h-full object-cover rounded-lg shadow-md"
+                        />
+                    </div>
+                    <div className="relative">
+                        <img
+                            src={fluid}
+                            alt="Project 2"
+                            className="w-full h-full object-cover rounded-lg shadow-md"
+                        />
+                    </div>
+                    <div className="relative">
+                        <img
+                            src={websitedes}
+                            alt="Project 2"
+                            className="w-full h-full object-cover rounded-lg shadow-md"
+                        />
+                    </div>
+                    <div className="relative">
+                        <img
+                            src={landingPage}
+                            alt="Project 2"
+                            className="w-full h-full object-cover rounded-lg shadow-md"
+                        />
+                    </div>
+                    <div className="relative">
+                        <img
+                            src={websitedesign}
+                            alt="Project 2"
+                            className="w-full h-full object-cover rounded-lg shadow-md"
+                        />
+                    </div>
+                    <div className="relative">
+                        <img
+                            src={brothersbond}
+                            alt="Project 2"
+                            className="w-full h-full object-cover rounded-lg shadow-md"
+                        />
+                    </div>
+                    <div className="relative">
+                        <img
+                            src={airmax}
+                            alt="Project 2"
+                            className="w-full h-full object-cover rounded-lg shadow-md"
+                        />
+                    </div>
+                    <div className="relative">
+                        <img
+                            src={websitedesign3}
+                            alt="Project 2"
+                            className="w-full h-full object-cover rounded-lg shadow-md"
+                        />
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
-export default Services;
+export default Webdevelopment;
