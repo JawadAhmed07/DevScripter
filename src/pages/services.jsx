@@ -579,66 +579,7 @@ function Services() {
 
 
             {/* Accordion */}
-            {/* <div>
-                <Accordion>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1-content"
-                        id="panel1-header"
-
-                    >
-                        WHAT KIND OF DIGITAL SERVICE DO YOU PROVIDE
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel2-content"
-                        id="panel2-header"
-                    >
-                        CAN YOU INTEGRATE E-COMMERCE FUNCTIONALITY INTO MY WEBSITE
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel3-content"
-                        id="panel3-header"
-                    >
-                        DO YOU PROVIDE WEB HOSTING   ?                 </AccordionSummary>
-                    <AccordionDetails>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                    </AccordionDetails>
-                    <AccordionActions>
-                        <Button>Cancel</Button>
-                        <Button>Agree</Button>
-                    </AccordionActions>
-                </Accordion>
-                <Accordion>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel3-content"
-                        id="panel3-header"
-                    >
-                        WAHT IF I'M NOT SATISFIED WITH THE WORK                  </AccordionSummary>
-                    <AccordionDetails>
-                        Testing
-                    </AccordionDetails>
-                    <AccordionActions>
-                        <Button>Cancel</Button>
-                        <Button>Agree</Button>
-                    </AccordionActions>
-                </Accordion>
-            </div> */}
+           
 
 
         </>

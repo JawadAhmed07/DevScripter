@@ -1,8 +1,14 @@
 // import { Button } from "antd";
+import Accordion from '@mui/material/Accordion';
+import AccordionActions from '@mui/material/AccordionActions';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
 import featureImage from '../Images/feature1.png';
 import featureImage2 from '../Images/feature2.png';
 import featureImage3 from '../Images/feature3.png';
+import thinking from '../Images/thinking.png';
 import featureImage4 from '../Images/feature4.png';
 import { useEffect, useState } from 'react';
 import '../App.css'
@@ -61,7 +67,7 @@ function Home() {
     useEffect(() => {
         const interval = setInterval(() => {
             nextTestimonial();
-        }, 5000); // 5000ms = 5 seconds
+        }, 50000000); // 5000ms = 5 seconds
         return () => clearInterval(interval); // Clear interval on component unmount
     }, [currentIndex]);
 
@@ -71,6 +77,22 @@ function Home() {
 
     const prevTestimonial = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
+    };
+
+
+    const [expanded, setExpanded] = useState(false);
+    const [currentQuestion, setCurrentQuestion] = useState(null);
+    
+    const handleChange = (panel) => (event, isExpanded) => {
+        setExpanded(isExpanded ? panel : false);
+        setCurrentQuestion(panel);
+        
+        // Reset color after 3 seconds
+        if (isExpanded) {
+            setTimeout(() => {
+                setCurrentQuestion(null);
+            }, 3000);
+        }
     };
 
     return (
@@ -723,6 +745,124 @@ function Home() {
                     >
                         <ArrowForwardIosSharpIcon />
                     </button>
+                </div>
+            </section>
+            {/* Accordion */}
+            <section className='flex mt-10 justify-center align-center'>
+                <div className="accordionside align-center mt-20 w-auto">
+                    <div>
+                        <Accordion
+                            expanded={expanded === 'panel1'}
+                            onChange={handleChange('panel1')}
+                            sx={{ backgroundColor: '#134e4a', borderBottom: '1px solid white' }}
+                        >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon sx={{ color: '#f5f5f5' }} />}
+                                aria-controls="panel1-content"
+                                id="panel1-header"
+                                sx={{ color: currentQuestion === 'panel1' ? '#ffd700' : '#f5f5f5' }} // Gold when open
+                            >
+                                WHAT KIND OF DIGITAL SERVICE DO YOU PROVIDE?
+                            </AccordionSummary>
+                            <AccordionDetails sx={{ backgroundColor: '#f5f5f5', color: '#134e4a' }}>
+                                We provide a variety of digital services including web development, graphic design, and SEO optimization.
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion
+                            expanded={expanded === 'panel2'}
+                            onChange={handleChange('panel2')}
+                            sx={{ backgroundColor: '#134e4a', borderBottom: '1px solid white' }}
+                        >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon sx={{ color: '#f5f5f5' }} />}
+                                aria-controls="panel2-content"
+                                id="panel2-header"
+                                sx={{ color: currentQuestion === 'panel2' ? '#ffd700' : '#f5f5f5' }} // Gold when open
+                            >
+                                CAN YOU INTEGRATE E-COMMERCE FUNCTIONALITY INTO MY WEBSITE?
+                            </AccordionSummary>
+                            <AccordionDetails sx={{ backgroundColor: '#f5f5f5', color: '#134e4a' }}>
+                                Yes, we can integrate e-commerce functionality using platforms like Shopify or WooCommerce based on your needs.
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion
+                            expanded={expanded === 'panel3'}
+                            onChange={handleChange('panel3')}
+                            sx={{ backgroundColor: '#134e4a', borderBottom: '1px solid white' }}
+                        >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon sx={{ color: '#f5f5f5' }} />}
+                                aria-controls="panel3-content"
+                                id="panel3-header"
+                                sx={{ color: currentQuestion === 'panel3' ? '#ffd700' : '#f5f5f5' }} // Gold when open
+                            >
+                                DO YOU PROVIDE WEB HOSTING?
+                            </AccordionSummary>
+                            <AccordionDetails sx={{ backgroundColor: '#f5f5f5', color: '#134e4a' }}>
+                                Yes, we provide reliable web hosting services tailored to your requirements.
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion
+                            expanded={expanded === 'panel4'}
+                            onChange={handleChange('panel4')}
+                            sx={{ backgroundColor: '#134e4a', borderBottom: '1px solid white' }}
+                        >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon sx={{ color: '#f5f5f5' }} />}
+                                aria-controls="panel4-content"
+                                id="panel4-header"
+                                sx={{ color: currentQuestion === 'panel4' ? '#ffd700' : '#f5f5f5' }} // Gold when open
+                            >
+                                WHAT IF I'M NOT SATISFIED WITH THE WORK?
+                            </AccordionSummary>
+                            <AccordionDetails sx={{ backgroundColor: '#f5f5f5', color: '#134e4a' }}>
+                                We strive for client satisfaction. If you're not satisfied, we offer revisions until you're happy.
+                            </AccordionDetails>
+                        </Accordion>
+
+                        {/* Additional Questions */}
+                        <Accordion
+                            expanded={expanded === 'panel5'}
+                            onChange={handleChange('panel5')}
+                            sx={{ backgroundColor: '#134e4a', borderBottom: '1px solid white' }}
+                        >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon sx={{ color: '#f5f5f5' }} />}
+                                aria-controls="panel5-content"
+                                id="panel5-header"
+                                sx={{ color: currentQuestion === 'panel5' ? '#ffd700' : '#f5f5f5' }} // Gold when open
+                            >
+                                CAN YOU HELP WITH SEO OPTIMIZATION?
+                            </AccordionSummary>
+                            <AccordionDetails sx={{ backgroundColor: '#f5f5f5', color: '#134e4a' }}>
+                                Absolutely! We provide comprehensive SEO services to improve your website's visibility.
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion
+                            expanded={expanded === 'panel6'}
+                            onChange={handleChange('panel6')}
+                            sx={{ backgroundColor: '#134e4a', borderBottom: '1px solid white' }}
+                        >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon sx={{ color: '#f5f5f5' }} />}
+                                aria-controls="panel6-content"
+                                id="panel6-header"
+                                sx={{ color: currentQuestion === 'panel6' ? '#ffd700' : '#f5f5f5' }} // Gold when open
+                            >
+                                DO YOU OFFER CUSTOM DESIGN SERVICES?
+                            </AccordionSummary>
+                            <AccordionDetails sx={{ backgroundColor: '#f5f5f5', color: '#134e4a' }}>
+                                Yes, we specialize in custom designs tailored to your specific needs.
+                            </AccordionDetails>
+                        </Accordion>
+                    </div>
+                </div>
+                <div className="imageside overflow-hidden w-auto ">
+                    <img className='w-auto h-auto mx-10' src="https://w3torch.com/wp-content/uploads/2023/02/web-development-services-1.png" alt="" />
                 </div>
             </section>
             {/* eight section (get in touch with us) */}
