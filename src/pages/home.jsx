@@ -130,8 +130,8 @@ function Home() {
             </section>
             {/* 2nd page content*/}
             <section
-                style={{ backgroundColor: "#ECE7E2" }}
-                // style={{backgroundColor: "#4A7766"}}
+                // style={{ backgroundColor: "#ECE7E2" }}
+                style={{backgroundColor: "white"}}
                 className="text-gray-600 body-font ">
                 <div className="container px-3 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
@@ -146,7 +146,7 @@ function Home() {
                         </p>
                     </div>
                     <div className="flex flex-wrap justify-center">
-                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded shadow cursor-pointer bg-white border-opacity-60 mx-4 my-4
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border-2 rounded shadow cursor-pointer border-opacity-60 mx-4 my-4
                         hover:text-white
                         transform transition duration-300 hover:scale-105 hover:shadow-lg"
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
@@ -160,7 +160,7 @@ function Home() {
                                 Tailored web development solutions to meet your unique business needs.
                             </p>
                         </div>
-                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded bg-white  shadow border-opacity-60 mx-4 cursor-pointer my-4
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border-2 rounded bg-white  shadow border-opacity-60 mx-4 cursor-pointer my-4
                         hover:text-white
                         transform transition duration-300 hover:scale-105 hover:shadow-lg"
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
@@ -176,7 +176,7 @@ function Home() {
 
                             </p>
                         </div>
-                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded  bg-white  shadow border-opacity-60 mx-4 cursor-pointer my-4
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border-2 rounded  bg-white  shadow border-opacity-60 mx-4 cursor-pointer my-4
                         hover:text-white
                         transform transition duration-300 hover:scale-105 hover:shadow-lg"
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
@@ -192,7 +192,7 @@ function Home() {
 
                             </p>
                         </div>
-                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border rounded bg-white shadow  border-opacity-60 mx-4 cursor-pointer my-4
+                        <div className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-full px-8 py-6 border-2 rounded bg-white shadow  border-opacity-60 mx-4 cursor-pointer my-4
                         hover:text-white
                         transform transition duration-300 hover:scale-105 hover:shadow-lg"
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4A7766')}
@@ -239,7 +239,7 @@ function Home() {
                                     <h2 className="font-medium title-font text-lg text-gray-100 mb-1 tracking-wider ">
                                         STEP 1
                                     </h2>
-                                    <p className="leading-relaxed text-gray-900">
+                                    <p className="leading-relaxed text-gray-200">
                                         Understand your needs and create a clear plan.
 
 
@@ -267,7 +267,7 @@ function Home() {
                                     <h2 className="font-medium title-font text-lg text-gray-100 mb-1 tracking-wider ">
                                         STEP 2
                                     </h2>
-                                    <p className="leading-relaxed text-gray-900">
+                                    <p className="leading-relaxed text-gray-200">
                                         Craft a custom design and prototype for approval.
 
                                     </p>
@@ -295,7 +295,7 @@ function Home() {
                                     <h2 className="font-medium title-font text-lg text-gray-100 mb-1 tracking-wider ">
                                         STEP 3
                                     </h2>
-                                    <p className="leading-relaxed text-gray-900">
+                                    <p className="leading-relaxed text-gray-200">
                                         Turn the design into a fully functional solution.
 
 
@@ -324,7 +324,7 @@ function Home() {
                                     <h2 className="font-medium title-font text-lg text-gray-100 mb-1 tracking-wider ">
                                         STEP 4
                                     </h2>
-                                    <p className="leading-relaxed text-gray-900">
+                                    <p className="leading-relaxed text-gray-200">
                                         Thorough testing and revisions based on your feedback.
 
                                     </p>
@@ -349,7 +349,7 @@ function Home() {
                                     <h2 className="font-medium title-font text-lg text-gray-100 mb-1 tracking-wider ">
                                         FINISH
                                     </h2>
-                                    <p className="leading-relaxed text-gray-900">
+                                    <p className="leading-relaxed text-gray-200">
                                         Finalize and deliver the project, ready for launch.
                                     </p>
                                 </div>
@@ -357,7 +357,8 @@ function Home() {
                         </div>
                         <img
                             className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-                            src="https://doctorofseo.com/wp-content/uploads/2020/02/image1-home1.png"
+                            // src="https://doctorofseo.com/wp-content/uploads/2020/02/image1-home1.png"
+                            src="https://img.freepik.com/free-vector/business-concept-steps-succeed-isometric-illustration-man-stepping-idea-plan-work-promotion-success-blocks_126523-542.jpg?t=st=1727104863~exp=1727108463~hmac=433e640c5fe1de7cb170ea22c35d581c5d47041106194a366b278e6bbb1af8fa&w=900"
                             alt="step"
                         // src="https://cdn.pixabay.com/photo/2022/08/31/18/11/teamwork-7423950_640.jpg"
                         // alt="step"
@@ -367,7 +368,8 @@ function Home() {
             </section>
             {/* Fourth section (our clients and project done) */}
             <section
-                style={{ backgroundColor: "#ECE7E2" }}
+                // style={{ backgroundColor: "#ECE7E2" }}
+                style={{ backgroundColor: "white" }}
                 className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap-reverse">
                     <div className="lg:w-1/2 w-full rounded-lg overflow-hidden mt-6 lg:mt-0">
@@ -418,7 +420,7 @@ function Home() {
                             </h1>
                             <div className="h-1 w-72 bg-indigo-500 rounded" />
                         </div>
-                        <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+                        <p className="lg:w-1/2 w-full leading-relaxed text-gray-100">
                             We specialize in building websites that are fast, responsive, and tailored to your business goals. Whether it's creating a new site from scratch or improving an existing one, our focus is on delivering a seamless, engaging experience for your users.
 
                         </p>
@@ -490,7 +492,7 @@ function Home() {
                                 />
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
                                     Website Maintainance                                </h2>
-                                <p className="leading-relaxed text-base">
+                                <p className="leading-relaxed text-base ">
                                     Our website maintenance service ensures that your website is up-to-date, secure, responsive and running smoothly, allowing you to focus on your business while we take care of the technical details.
                                 </p>
                             </div>
@@ -500,7 +502,8 @@ function Home() {
             </section>
             {/* sixth section (our recent blogs) */}
             <section
-            style={{ backgroundColor: "#ECE7E2" }}
+            // style={{ backgroundColor: "#ECE7E2" }}
+            style={{ backgroundColor: "white" }}
             className="text-gray-600 body-font">
                 <h1 className="text-center text-green-700 align-center justify-center pt-10 text-4xl capitalize">"Explore the Latest in Web Development and SEO"
                 </h1>
@@ -755,7 +758,8 @@ function Home() {
             </section>
             {/* Accordion */}
             <section 
-            style={{ backgroundColor: "#ECE7E2" }}
+            // style={{ backgroundColor: "#ECE7E2" }}
+            style={{ backgroundColor: "white" }}
             className='flex justify-center align-center'>
                 <div className="accordionside align-center pl-16 mt-8 w-auto">
                     <div className='px-10 py-5'>

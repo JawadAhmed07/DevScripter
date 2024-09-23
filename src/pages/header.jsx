@@ -11,7 +11,8 @@ function Header() {
     return (
         <header
             style={{
-                backgroundColor: "#ECE7E2",
+                backgroundColor: "white",
+                // backgroundColor: "#ECE7E2",
             }}
             className="text-black body-font shadow shadow-black"
         >
