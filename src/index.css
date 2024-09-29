@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.seo-first-page{
+    background-image: url("https://zeracreative.com/wp-content/uploads/2019/02/seo-important-key-ways-build-great-seo.jpg?id=3420");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.seo-first-page::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.seo-first-page * {
+    position: relative;
+    z-index: 2; /* Ensures content stays above the overlay */
+}
