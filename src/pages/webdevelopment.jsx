@@ -10,6 +10,7 @@ import shery from '../Images/shery.png';
 import websitedes from '../Images/websitedes.png';
 import websitedesign from '../Images/websitedesign.png';
 import websitedesign3 from '../Images/websitedesign3.png';
+import WhyChooseUs from '../components/whychoseus';
 
 // import featureImage4 from '../Images/feature4.png';
 
@@ -352,6 +353,7 @@ function Webdevelopment() {
                     </div>
                 </div>
             </section>
+            <WhyChooseUs data={"YOUR WEB DEVELOPMENT COMPANY"}/>
         </>
     )
 }
