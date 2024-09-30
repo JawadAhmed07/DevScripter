@@ -1,6 +1,5 @@
 import React from "react";
 import { Typography, Box, Grid, Button } from "@mui/material";
-import Features from "../components/Features";
 import Requestproposal from "../components/Requestproposal";
 
 function About() {
