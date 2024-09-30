@@ -12,6 +12,7 @@ import Writeforus from './pages/writeforus'
 import * as React from 'react';
 import Seo from './pages/seo'
 import GraphicDesign from './pages/graphicdesign'
+import WhyChooseUs from './components/whychoseus'
 
 // import Content from './pages/content'
 
@@ -22,6 +23,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />}></Route>
+        <Route path='/whychoseus' element={<WhyChooseUs />}></Route>
         <Route path='/seo' element={<Seo />}></Route>
         <Route path='/graphicdesign' element={<GraphicDesign />}></Route>
         <Route path='/Webdevelopment' element={<Webdevelopment/>}></Route>
