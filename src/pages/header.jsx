@@ -67,7 +67,7 @@ function Header() {
                     SEO
                   </Link>
                   <Link
-                    to="/services/graphic-design"
+                    to="/graphicdesign"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     style={{ textDecoration: "none" }} // No underline
                     onClick={() => setIsDropdownOpen(false)}
