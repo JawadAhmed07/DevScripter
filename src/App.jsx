@@ -13,6 +13,7 @@ import * as React from 'react';
 import Seo from './pages/seo'
 import GraphicDesign from './pages/graphicdesign'
 import WhyChooseUs from './components/whychoseus'
+import Reviews from './components/reviews'
 
 // import Content from './pages/content'
 
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/whychoseus' element={<WhyChooseUs />}></Route>
+        <Route path='/reviews' element={<Reviews />}></Route>
         <Route path='/seo' element={<Seo />}></Route>
         <Route path='/graphicdesign' element={<GraphicDesign />}></Route>
         <Route path='/Webdevelopment' element={<Webdevelopment/>}></Route>
