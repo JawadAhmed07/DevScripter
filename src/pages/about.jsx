@@ -1,12 +1,28 @@
 import React from "react";
 import { Typography, Box, Grid, Button, CircularProgress } from "@mui/material";
 import Requestproposal from "../components/Requestproposal";
+import WhyChooseUs from "../components/whychoseus";
 
 function About() {
   const progressData = [
-    { value: 99, label: 'Creative Approach', description: 'Through our innovative and creative strategies, we continuously achieve excellent results.' },
-    { value: 90, label: 'Efficiency', description: 'We strive to achieve maximum efficiency in all our processes to deliver the best results.' },
-    { value: 85, label: 'Client Satisfaction', description: 'Our focus is on ensuring complete client satisfaction in every project we undertake.' },
+    {
+      value: 99,
+      label: "Creative Approach",
+      description:
+        "Through our innovative and creative strategies, we continuously achieve excellent results.",
+    },
+    {
+      value: 90,
+      label: "Efficiency",
+      description:
+        "We strive to achieve maximum efficiency in all our processes to deliver the best results.",
+    },
+    {
+      value: 85,
+      label: "Client Satisfaction",
+      description:
+        "Our focus is on ensuring complete client satisfaction in every project we undertake.",
+    },
   ];
   return (
     <>
@@ -40,11 +56,11 @@ function About() {
           textAlign="left"
         >
           <Grid item xs={12} md={6}>
-            <Typography variant="h5" gutterBottom marginLeft={1}>
-              ABOUT Us
+            <Typography variant="h6" gutterBottom marginLeft={1}>
+              ABOUT US
             </Typography>
-            <Typography variant="h3" gutterBottom sx={{ fontWeight: "bold" }}>
-              Converting Leads into Loyal Customers
+            <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold" }}>
+              Converting Leads Into Loyal Customers
             </Typography>
             <Typography variant="body1" fontSize={14} paragraph>
               DEVSCRIPTER is dedicated to providing small business owners with
@@ -73,6 +89,25 @@ function About() {
               <Button variant="outlined" sx={{ padding: "10px 20px" }}>
                 Contact Us
               </Button>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Box
+              sx={{
+                width: "100%",
+                maxWidth: "400px",
+                height: "auto",
+                margin: "auto",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                alt="feature"
+                className="object-cover object-center rounded-lg"
+                src="https://dummyimage.com/400x450"
+                style={{ width: "100%", height: "auto" }}
+              />
             </Box>
           </Grid>
         </Grid>
@@ -146,57 +181,66 @@ function About() {
 
       {/* 4rt Creative Section */}
       <Box className="container mx-auto py-12">
-      {progressData.map((item, index) => (
-        <Grid container spacing={2} alignItems="center" className="mb-10" key={index}>
-          {/* Left Circular Progress */}
-          <Grid item xs={12} md={6}>
-            <Box className="flex justify-center">
-              <Box className="relative">
-                <CircularProgress
-                  variant="determinate"
-                  value={item.value}
-                  size={120}
-                  thickness={4}
-                  className="text-indigo-500"
-                />
-                <Box className="absolute inset-0 flex items-center justify-center">
-                  <Typography
-                    variant="h4"
-                    component="div"
-                    color="textPrimary"
+        {progressData.map((item, index) => (
+          <Grid
+            container
+            spacing={2}
+            alignItems="center"
+            className="mb-10"
+            key={index}
+          >
+            {/* Left Circular Progress */}
+            <Grid item xs={12} md={6}>
+              <Box className="flex justify-center">
+                <Box className="relative">
+                  <CircularProgress
+                    variant="determinate"
+                    value={item.value}
+                    size={120}
+                    thickness={4}
                     className="text-indigo-500"
-                  >
-                    {item.value}%
-                  </Typography>
+                  />
+                  <Box className="absolute inset-0 flex items-center justify-center">
+                    <Typography
+                      variant="h4"
+                      component="div"
+                      color="textPrimary"
+                      className="text-indigo-500"
+                    >
+                      {item.value}%
+                    </Typography>
+                  </Box>
                 </Box>
               </Box>
-            </Box>
+            </Grid>
+            {/* Right Content */}
+            <Grid item xs={12} md={6}>
+              <Box className="flex flex-col items-center md:items-start">
+                <Typography
+                  variant="h5"
+                  className="text-indigo-500 text-center md:text-left"
+                >
+                  {item.label}
+                </Typography>
+                <Typography
+                  variant="body1"
+                  className="text-center md:text-left text-gray-600 leading-relaxed"
+                >
+                  {item.description}
+                </Typography>
+              </Box>
+            </Grid>
           </Grid>
+        ))}
+      </Box>
 
-          {/* Right Content */}
-          <Grid item xs={12} md={6}>
-            <Box className="flex flex-col items-center md:items-start">
-              <Typography
-                variant="h5"
-                className="text-indigo-500 text-center md:text-left"
-              >
-                {item.label}
-              </Typography>
-              <Typography
-                variant="body1"
-                className="text-center md:text-left text-gray-600 leading-relaxed"
-              >
-                {item.description}
-              </Typography>
-            </Box>
-          </Grid>
-        </Grid>
-      ))}
-    </Box>
-
+      {/* Why choose us */}
+      <Box sx={{ width: "100%", marginBottom: "0px" }}>
+        <WhyChooseUs/>
+      </Box>
 
       {/* Request Proposal Section */}
-      <Box sx={{ width: "100%", marginTop: "20px" }}>
+      <Box sx={{ width: "100%", marginTop: "5px" }}>
         <Requestproposal />
       </Box>
     </>
