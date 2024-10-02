@@ -1,8 +1,13 @@
 import React from "react";
-import { Typography, Box, Grid, Button } from "@mui/material";
+import { Typography, Box, Grid, Button, CircularProgress } from "@mui/material";
 import Requestproposal from "../components/Requestproposal";
 
 function About() {
+  const progressData = [
+    { value: 99, label: 'Creative Approach', description: 'Through our innovative and creative strategies, we continuously achieve excellent results.' },
+    { value: 90, label: 'Efficiency', description: 'We strive to achieve maximum efficiency in all our processes to deliver the best results.' },
+    { value: 85, label: 'Client Satisfaction', description: 'Our focus is on ensuring complete client satisfaction in every project we undertake.' },
+  ];
   return (
     <>
       {/* 1st Section with Background Image */}
@@ -26,37 +31,34 @@ function About() {
       </Box>
 
       {/* Content Section */}
-      <Box className="container px-5 py-24 mx-auto">
-        <Grid container spacing={6} alignItems="center">
+      <Box className="container px-5 py-5 mx-auto">
+        <Grid
+          container
+          spacing={6}
+          alignItems="center"
+          justifyContent="center"
+          textAlign="left"
+        >
           <Grid item xs={12} md={6}>
-            <Box className="w-full rounded-lg overflow-hidden">
-              <img
-                alt="feature"
-                className="object-cover object-center h-full w-full"
-                src="https://dummyimage.com/460x500"
-              />
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Typography variant="h5" gutterBottom>
+            <Typography variant="h5" gutterBottom marginLeft={1}>
               ABOUT Us
             </Typography>
-            <Typography variant="h2" gutterBottom sx={{ fontWeight: "bold" }}>
+            <Typography variant="h3" gutterBottom sx={{ fontWeight: "bold" }}>
               Converting Leads into Loyal Customers
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" fontSize={14} paragraph>
               DEVSCRIPTER is dedicated to providing small business owners with
               professional, high-quality websites at affordable rates. We are a
               passionate community of tech-savvy individuals who strive to
               empower businesses by creating websites that are not only
               functional but also visually appealing.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" fontSize={14} paragraph>
               Our mission is to deliver solutions that reflect the value of each
               business while fostering their growth through collaboration and
               innovation.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" fontSize={14} paragraph>
               At DEVSCRIPTER, we work closely with our clients, ensuring their
               success is our priority by offering comprehensive and affordable
               services that drive real results.
@@ -72,103 +74,6 @@ function About() {
                 Contact Us
               </Button>
             </Box>
-          </Grid>
-        </Grid>
-      </Box>
-
-      {/* 3rd Creative Section */}
-      <Box className="bg-[#4a7766] py-12">
-        <Grid container className="container mx-auto px-5" spacing={6}>
-          <Grid item xs={12} md={6}>
-            <Box className="w-full rounded-lg overflow-hidden">
-              <img
-                alt="feature"
-                className="object-cover object-center h-full w-full"
-                src="https://dummyimage.com/460x500"
-              />
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <div className="flex flex-col justify-center">
-              {/* Creative Approach */}
-              <Box className="flex items-start mb-10">
-                <Box className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-6 h-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                  </svg>
-                </Box>
-                <Box ml={3}>
-                  <Typography variant="h6" className="text-white">
-                    Creative Approach
-                  </Typography>
-                  <Typography variant="body1" className="text-white">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
-                  </Typography>
-                </Box>
-              </Box>
-              {/* Timeline Assurance */}
-              <Box className="flex items-start mb-10">
-                <Box className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-6 h-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle cx={6} cy={6} r={3} />
-                    <circle cx={6} cy={18} r={3} />
-                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" />
-                  </svg>
-                </Box>
-                <Box ml={3}>
-                  <Typography variant="h6" className="text-white">
-                    Timeline Assurance
-                  </Typography>
-                  <Typography variant="body1" className="text-white">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
-                  </Typography>
-                </Box>
-              </Box>
-              {/* Granted Success */}
-              <Box className="flex items-start">
-                <Box className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-6 h-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                    <circle cx={12} cy={7} r={4} />
-                  </svg>
-                </Box>
-                <Box ml={3}>
-                  <Typography variant="h6" className="text-white">
-                    Granted Success
-                  </Typography>
-                  <Typography variant="body1" className="text-white">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
-                  </Typography>
-                </Box>
-              </Box>
-            </div>
           </Grid>
         </Grid>
       </Box>
@@ -196,14 +101,14 @@ function About() {
                   className="title-font font-bold mb-4 text-white"
                   sx={{ fontWeight: "bold" }}
                 >
-                  Completed Stories! 
+                  Completed Stories!
                 </Typography>
                 <Typography
                   className="leading-relaxed text-white mb-8"
                   sx={{ fontWeight: "bold" }}
                 >
-                  WE MAKE AWESOME CONTRIBUTIONS FOR OUR
-                  CLIENTS. CHECK OUT SOME OF OUR WORK.
+                  WE MAKE AWESOME CONTRIBUTIONS FOR OUR CLIENTS. CHECK OUT SOME
+                  OF OUR WORK.
                 </Typography>
               </div>
 
@@ -238,6 +143,57 @@ function About() {
           </div>
         </section>
       </Box>
+
+      {/* 4rt Creative Section */}
+      <Box className="container mx-auto py-12">
+      {progressData.map((item, index) => (
+        <Grid container spacing={2} alignItems="center" className="mb-10" key={index}>
+          {/* Left Circular Progress */}
+          <Grid item xs={12} md={6}>
+            <Box className="flex justify-center">
+              <Box className="relative">
+                <CircularProgress
+                  variant="determinate"
+                  value={item.value}
+                  size={120}
+                  thickness={4}
+                  className="text-indigo-500"
+                />
+                <Box className="absolute inset-0 flex items-center justify-center">
+                  <Typography
+                    variant="h4"
+                    component="div"
+                    color="textPrimary"
+                    className="text-indigo-500"
+                  >
+                    {item.value}%
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+          </Grid>
+
+          {/* Right Content */}
+          <Grid item xs={12} md={6}>
+            <Box className="flex flex-col items-center md:items-start">
+              <Typography
+                variant="h5"
+                className="text-indigo-500 text-center md:text-left"
+              >
+                {item.label}
+              </Typography>
+              <Typography
+                variant="body1"
+                className="text-center md:text-left text-gray-600 leading-relaxed"
+              >
+                {item.description}
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+      ))}
+    </Box>
+
 
       {/* Request Proposal Section */}
       <Box sx={{ width: "100%", marginTop: "20px" }}>
