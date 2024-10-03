@@ -1,33 +1,6 @@
-
-// import reviews from '../Images/GdPage/review.png';
-
-
-// function Reviews() {
-
-
-
-    
-//     return (
-//         <>
-//             <section>
-//                 <div className="text-center py-10">
-//                     <h1 className="text-3xl text-gray-500">What some of our satisfied customers are saying
-//                     </h1>
-//                     <h1 className="text-4xl font-bold py-5 text-gray-700">Real Client Testimonials
-//                     </h1>
-//                 </div>
-//                 <div className="flex gap-2">
-//                     <div><img className='w-48' src={reviews} /></div>
-//                     <div>
-//                         {/* render reviews here */}
-//                     </div>
-//                 </div>
-//             </section>
-//         </>
-//     )
-// }
-
-// export default Reviews;
+import google from '../Images/google.png';
+// import person1 from '../Images/person/person1.jpeg';
+// import person2 from '../Images/person/person2.jpeg';
 
 import React, { useEffect, useState } from 'react';
 import reviewsImage from '../Images/GdPage/review.png'; // Assuming correct image path
@@ -40,15 +13,15 @@ const reviewsData = [
     date: 'June 15, 2024',
     text: 'Amazing experience working with the team! Their dedication and skills helped grow my business.',
     stars: 5,
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnnmy_e9yxRfaW3_Rc53ceP9miL9Ls7RsPGyqBR6sFLGBHKymZeJaqkzL5QCLfCLZ5jbw&usqp=CAU',
   },
   {
     id: 2,
-    name: 'Jane Smith',
+    name: 'Jane ',
     date: 'July 22, 2024',
     text: 'They were so helpful in optimizing my website for SEO. Highly recommend them!',
     stars: 5,
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnnmy_e9yxRfaW3_Rc53ceP9miL9Ls7RsPGyqBR6sFLGBHKymZeJaqkzL5QCLfCLZ5jbw&usqp=CAU',
   },
   {
     id: 3,
@@ -56,7 +29,7 @@ const reviewsData = [
     date: 'May 12, 2024',
     text: 'Incredible service with a great team! They understood exactly what I needed.',
     stars: 5,
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnnmy_e9yxRfaW3_Rc53ceP9miL9Ls7RsPGyqBR6sFLGBHKymZeJaqkzL5QCLfCLZ5jbw&usqp=CAU',
   },
   {
     id: 4,
@@ -64,7 +37,7 @@ const reviewsData = [
     date: 'August 1, 2024',
     text: 'Exceptional work! They increased my website traffic within a month!',
     stars: 5,
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnnmy_e9yxRfaW3_Rc53ceP9miL9Ls7RsPGyqBR6sFLGBHKymZeJaqkzL5QCLfCLZ5jbw&usqp=CAU',
   },
   {
     id: 5,
@@ -72,7 +45,7 @@ const reviewsData = [
     date: 'September 5, 2024',
     text: 'Very professional service. They were responsive and exceeded my expectations.',
     stars: 4,
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnnmy_e9yxRfaW3_Rc53ceP9miL9Ls7RsPGyqBR6sFLGBHKymZeJaqkzL5QCLfCLZ5jbw&usqp=CAU',
   },
   {
     id: 6,
@@ -80,7 +53,7 @@ const reviewsData = [
     date: 'March 18, 2024',
     text: 'Excellent SEO service, truly made a difference in my online presence.',
     stars: 5,
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnnmy_e9yxRfaW3_Rc53ceP9miL9Ls7RsPGyqBR6sFLGBHKymZeJaqkzL5QCLfCLZ5jbw&usqp=CAU',
   },
   {
     id: 7,
@@ -88,7 +61,7 @@ const reviewsData = [
     date: 'October 2, 2024',
     text: 'Highly recommend their team for website optimization and SEO.',
     stars: 5,
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnnmy_e9yxRfaW3_Rc53ceP9miL9Ls7RsPGyqBR6sFLGBHKymZeJaqkzL5QCLfCLZ5jbw&usqp=CAU',
   },
   {
     id: 8,
@@ -96,7 +69,7 @@ const reviewsData = [
     date: 'November 11, 2024',
     text: 'Very impressed with the SEO strategy they implemented!',
     stars: 5,
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnnmy_e9yxRfaW3_Rc53ceP9miL9Ls7RsPGyqBR6sFLGBHKymZeJaqkzL5QCLfCLZ5jbw&usqp=CAU',
   },
 ];
 
@@ -105,12 +78,20 @@ const ReviewCard = ({ review }) => {
   const { name, date, text, stars, logo } = review;
 
   return (
-    <div className="bg-white shadow-lg p-6 rounded-lg w-80 mx-4 my-4">
-      <div className="flex items-center">
-        <h4 className="font-semibold text-lg mr-2">{name}</h4>
-        <img src={logo} alt="Google logo" className="w-6 h-6" />
+    <div className="bg-white  shadow-lg p-6 rounded-lg w-96 my-4 mx-2 border ">
+     <div className='flex gap-4'>
+     <div className='my-2'>
+      <img src={logo} alt="Google logo" className="w-8 rounded-full h-8" />
       </div>
-      <p className="text-sm text-gray-500 mb-2">{date}</p>
+      <div>
+      <div className="flex items-center">
+        <h4 className="font-semibold text-md">{name}</h4>
+      </div>
+      <p className="text-sm text-gray-500 mb-3">{date}</p>
+      </div>
+      <h1 className='pl-16'><img className='w-10 h-10' src={google} alt="" /></h1>
+    
+     </div>
       <div className="flex items-center mb-4">
         {[...Array(stars)].map((_, i) => (
           <svg key={i} className="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
@@ -130,7 +111,7 @@ function Reviews() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 4) % reviewsData.length); // Update by 4 reviews at a time
-    }, 5000); // 5-second interval for the reviews to rotate
+    }, 10000); // 5-second interval for the reviews to rotate
 
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, []);
@@ -146,7 +127,7 @@ function Reviews() {
           <h1 className="text-4xl font-bold py-5 text-gray-700">Real Client Testimonials</h1>
         </div>
         <div className="flex gap-2 justify-center">
-          <div><img className="w-48 " src={reviewsImage} alt="Review illustration" /></div>
+          <div><img className="w-52 my-16 " src={reviewsImage} alt="Review illustration" /></div>
           <div className="flex overflow-x-auto">
             {/* Render 4 reviews */}
             {visibleReviews.map((review) => (
