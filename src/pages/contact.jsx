@@ -1,137 +1,226 @@
+import { MailOutlined, PlaceOutlined } from "@mui/icons-material";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import { Layout, Form, Input, Button, Row, Col, Card, Select } from "antd";
-import { MailOutlined, PhoneOutlined, EnvironmentOutlined, UserOutlined, InfoCircleOutlined } from "@ant-design/icons";
 
-const { Content } = Layout;
-const { Option } = Select;
+function Contact() {
+  return (
+    <>
+      {/* Top Section with Background Image */}
+      <Box
+        className="proposal"
+      >
+        <Typography variant="h4" align="center" color="#fff" gutterBottom>
+          Contact Us
+        </Typography>
+        <Typography variant="subtitle1" align="center" color="#fff">
+          We are here to assist you
+        </Typography>
+      </Box>
 
+      {/* Contact detail section */}
+      <Box py={0} mt={0}>
+        <Grid container>
+          {/* Pakistan Office */}
+          <Grid item xs={12} md={4}>
+            <Box p={6}>
+              <PlaceOutlined />
+              <Typography variant="h6" className="font-bold mb-2">
+                Pakistan Office
+              </Typography>
+              <Typography>
+                Suite# 610, Park Avenue, PECHS Block-6, Karachi 75400, Pakistan
+              </Typography>
+              <Typography>Timings: 10 AM to 6 PM (GMT+5)</Typography>
+            </Box>
+          </Grid>
 
-function Contact (){
-    const handleSubmit = (values) => {
-        console.log("Form Submitted:", values);
-      };
-    
-      return (
-        <Layout className="min-h-screen bg-gray-50">
-          <Content>
-            {/* Google Maps Embed */}
-            <div className="w-full h-80">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345095794!2d144.9537353153189!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f6db1f1b0d9b!2sEnvato!5e0!3m2!1sen!2sin!4v1632897999821!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                allowFullScreen=""
-                loading="lazy"
-                title="Google Map"
-                className="rounded-lg border"
-              ></iframe>
+          {/* Contact Information */}
+          <Grid item xs={12} md={4}>
+            <Box p={6} sx={{ backgroundColor: "#f4f4f4", color: "#333" }}>
+              <MailOutlined />
+              <Box>
+                <Typography variant="h6" className="font-bold mb-2">
+                  Contact Us
+                </Typography>
+                <Typography>Call (US): (832) 548-5844</Typography>
+                <Typography>Call (Pak): +92-309-2156445</Typography>
+              </Box>
+              <Box>
+                <Typography variant="h6" className="font-bold mb-2">
+                  Email Us
+                </Typography>
+                <Typography>General: hello(@)zeracreative.com</Typography>
+                <Typography>HR: hr(@)zeracreative.com</Typography>
+              </Box>
+            </Box>
+          </Grid>
+
+          {/* USA Offices */}
+          <Grid item xs={12} md={4}>
+            <Box p={6} sx={{ backgroundColor: "#000", color: "#fff" }}>
+              <PlaceOutlined />
+              <Typography variant="h6" className="font-bold mb-2">
+                USA Offices
+              </Typography>
+              <Typography>
+                Office #1: 30 N Gould St Ste R, Sheridan, WY 82801.
+              </Typography>
+              <Typography>
+                Office #2: 49 Smith St. Saint Cloud, MN 56301.
+              </Typography>
+              <Typography>Timings: 10 AM to 6 PM (GMT+5)</Typography>
+              <Typography variant="h6" mt={2}>
+                DEVSCRIPTER
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
+
+      {/* Contact us form */}
+      <Box sx={{ backgroundColor: "#4A7766" }}>
+        <section className="text-gray-600 body-font relative">
+          <div className="container px-5 py-10 mx-auto">
+            <div className="flex flex-col text-center w-full mb-12">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+                Get in touch
+              </h1>
+              <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-white">
+                Let's work together.
+              </p>
             </div>
-    
-            <div className="max-w-6xl mx-auto p-8">
-              <Row gutter={[16, 16]}>
-                {/* Contact Form */}
-                <Col xs={24} md={12}>
-                  <Card title="Contact Us" bordered={false} className="shadow-md">
-                    <Form
-                      layout="vertical"
-                      onFinish={handleSubmit}
-                      className="space-y-6"
+            <div className="lg:w-1/2 md:w-2/3 mx-auto">
+              <div className="flex flex-wrap -m-2">
+                <div className="p-2 w-1/2">
+                  <div className="relative">
+                    <label
+                      htmlFor="name"
+                      className="leading-7 text-sm text-white"
                     >
-                      {/* Name Input */}
-                      <Form.Item
-                        name="name"
-                        label="Name"
-                        rules={[{ required: true, message: "Please enter your name" }]}
-                      >
-                        <Input prefix={<UserOutlined />} placeholder="Enter your name" className="rounded-lg" />
-                      </Form.Item>
-    
-                      {/* Email Input */}
-                      <Form.Item
-                        name="email"
-                        label="Email"
-                        rules={[
-                          { required: true, type: "email", message: "Please enter a valid email" },
-                        ]}
-                      >
-                        <Input prefix={<MailOutlined />} placeholder="Enter your email" className="rounded-lg" />
-                      </Form.Item>
-    
-                      {/* Service Type Dropdown */}
-                      <Form.Item
-                        name="service"
-                        label="Service Type"
-                        rules={[{ required: true, message: "Please select a service type" }]}
-                      >
-                        <Select placeholder="Select a service type" className="rounded-lg">
-                          <Option value="web-development">Web Development</Option>
-                          <Option value="graphic-design">Graphic Design</Option>
-                          <Option value="seo">SEO</Option>
-                          <Option value="digital-marketing">Digital Marketing</Option>
-                        </Select>
-                      </Form.Item>
-    
-                      {/* Budget Input */}
-                      <Form.Item
-                        name="budget"
-                        label="Budget"
-                        rules={[{ required: true, message: "Please enter your budget" }]}
-                      >
-                        <Input placeholder="Enter your budget" className="rounded-lg" />
-                      </Form.Item>
-    
-                      {/* Message Input */}
-                      <Form.Item
-                        name="message"
-                        label="Message"
-                        rules={[{ required: true, message: "Please enter your message" }]}
-                      >
-                        <Input.TextArea placeholder="Write your message here" rows={4} className="rounded-lg" />
-                      </Form.Item>
-    
-                      {/* Submit Button */}
-                      <Form.Item>
-                        <Button type="primary" htmlType="submit" className="w-full bg-blue-500 hover:bg-blue-600 rounded-lg">
-                          Submit
-                        </Button>
-                      </Form.Item>
-                    </Form>
-                  </Card>
-                </Col>
-    
-                {/* Contact Information */}
-                <Col xs={24} md={12}>
-                  <Card title="Contact Information" bordered={false} className="shadow-md">
-                    <div className="mb-4">
-                      <p className="flex items-center mb-2">
-                        <PhoneOutlined className="mr-2 text-xl text-blue-500" />
-                        <span>+123 456 7890</span>
-                      </p>
-                      <p className="flex items-center mb-2">
-                        <MailOutlined className="mr-2 text-xl text-blue-500" />
-                        <span>info@portfolio.com</span>
-                      </p>
-                      <p className="flex items-center mb-2">
-                        <EnvironmentOutlined className="mr-2 text-xl text-blue-500" />
-                        <span>123 Portfolio St, Web City, Country</span>
-                      </p>
-                    </div>
-                    <div className="mb-4">
-                      <p className="flex items-center mb-2">
-                        <InfoCircleOutlined className="mr-2 text-xl text-blue-500" />
-                        <span>Working Hours: Mon - Fri, 9 AM - 6 PM</span>
-                      </p>
-                      <p className="flex items-center mb-2">
-                        <InfoCircleOutlined className="mr-2 text-xl text-blue-500" />
-                        <span>Follow us on <a href="#" className="text-blue-500 hover:underline">Social Media</a></span>
-                      </p>
-                    </div>
-                  </Card>
-                </Col>
-              </Row>
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                </div>
+
+                <div className="p-2 w-1/2">
+                  <div className="relative">
+                    <label
+                      htmlFor="email"
+                      className="leading-7 text-sm text-white"
+                    >
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                </div>
+
+                {/* Additional Fields */}
+                <div className="p-2 w-1/2">
+                  <div className="relative">
+                    <label
+                      htmlFor="number"
+                      className="leading-7 text-sm text-white"
+                    >
+                      Phone Number
+                    </label>
+                    <input
+                      type="text"
+                      id="number"
+                      name="number"
+                      className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                </div>
+
+                <div className="p-2 w-1/2">
+                  <div className="relative">
+                    <label
+                      htmlFor="budget"
+                      className="leading-7 text-sm text-white"
+                    >
+                      Budget
+                    </label>
+                    <input
+                      type="text"
+                      id="budget"
+                      name="budget"
+                      className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                </div>
+
+                <div className="p-2 w-full">
+                  <div className="relative">
+                    <label
+                      htmlFor="service"
+                      className="leading-7 text-sm text-white"
+                    >
+                      Which service are you interested in? *
+                    </label>
+                    <select
+                      id="service"
+                      name="service"
+                      className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    >
+                      <option value="">Select a service</option>
+                      <option value="webDevelopment">Web Development</option>
+                      <option value="seo">SEO</option>
+                      <option value="digitalMarketing">
+                        Digital Marketing
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="p-2 w-full">
+                  <div className="relative">
+                    <label
+                      htmlFor="message"
+                      className="leading-7 text-sm text-white"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                      defaultValue={""}
+                    />
+                  </div>
+                </div>
+
+                <div className="p-2 w-full">
+                  <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                    Submit For Your Success
+                  </button>
+                </div>
+
+                <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                  <a className="text-indigo-500">example@email.com</a>
+                  <p className="leading-normal my-5">
+                    49 Smith St.
+                    <br />
+                    Saint Cloud, MN 56301
+                  </p>
+                </div>
+              </div>
             </div>
-          </Content>
-        </Layout>
-      );
+          </div>
+        </section>
+      </Box>
+    </>
+  );
 }
+
 export default Contact;
