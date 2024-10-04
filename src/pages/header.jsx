@@ -1,117 +1,84 @@
-import { Link } from "react-router-dom";
+
+import { AppBar, Toolbar, IconButton, Typography, Button, Menu, MenuItem, Box } from "@mui/material";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
   };
 
   return (
-    <header
-      style={{
-        backgroundColor: "white",
-        // backgroundColor: "#ECE7E2",
-      }}
-      className="text-black body-font shadow shadow-black"
-    >
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="flex title-font font-medium items-center text-black mb-4 md:mb-0">
+    <AppBar position="static" style={{ backgroundColor: "#fff", color: "#4A7766", boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)" }}>
+      <Toolbar>
+        <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6tzwkSJr3mPy9yIuMQcpjV7AI-O7z8hXSA&s"
             alt="Logo"
-            className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+            style={{ width: "40px", height: "40px" }}
           />
-          <span className="ml-3 text-xl">DevScripters</span>
-        </a>
-
-        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <Link className="mr-5 text-green-800 text-lg" to="/">
-            Home
-          </Link>
-
-          {/* Services dropdown */}
-          <div className="relative inline-block text-left mr-5">
-            <button
-              className="text-green-800 text-lg flex items-center focus:outline-none"
-              style={{ textDecoration: "none", border: "none" }} // Ensuring underline is removed
-              onClick={toggleDropdown}
-            >
-              Services
-              <span
-                className={`ml-1 transform ${
-                  isDropdownOpen ? "rotate-180" : "rotate-0"
-                }`}
-              >
-                &#9660;
-              </span>
-            </button>
-            {isDropdownOpen && (
-              <div className="absolute mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
-                <div className="py-1">
-                  <Link
-                    to="/webdevelopment"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    style={{ textDecoration: "none" }} // No underline
-                    onClick={() => setIsDropdownOpen(false)}
-                  >
-                    Web Development
-                  </Link>
-                  <Link
-                    to="/seo"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    style={{ textDecoration: "none" }} // No underline
-                    onClick={() => setIsDropdownOpen(false)}
-                  >
-                    SEO
-                  </Link>
-                  <Link
-                    to="/graphicdesign"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    style={{ textDecoration: "none" }} // No underline
-                    onClick={() => setIsDropdownOpen(false)}
-                  >
-                    Graphic Design
-                  </Link>
-                </div>
-              </div>
-            )}
-          </div>
-
-          <Link className="mr-5 text-green-800 text-lg" to="/contact">
-            Contact
-          </Link>
-          <Link className="mr-5 text-green-800 text-lg" to="/blog">
-            Blog
-          </Link>
-          <Link className="mr-5 text-green-800 text-lg" to="/about">
-            About Us
-          </Link>
-          <Link className="mr-5 text-green-800 text-lg" to="/writeforus">
-            Write For Us
-          </Link>
-        </nav>
-        <button
-          style={{ backgroundColor: "#4A7766" }}
-          className="inline-flex items-center text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+        </IconButton>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          DevScripters
+        </Typography>
+        
+        {/* Links */}
+        <Button component={Link} to="/" color="inherit" sx={{ mr: 2 }}>
+          Home
+        </Button>
+        
+        {/* Services Dropdown */}
+        <Button
+          aria-controls={open ? 'services-menu' : undefined}
+          aria-haspopup="true"
+          aria-expanded={open ? 'true' : undefined}
+          onClick={handleClick}
+          color="inherit"
         >
-          Get a quote
-          <svg
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            className="w-4 h-4 ml-1"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
-    </header>
+          Services
+        </Button>
+        <Menu
+          id="services-menu"
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          MenuListProps={{
+            'aria-labelledby': 'services-button',
+          }}
+        >
+          <MenuItem onClick={handleClose} component={Link} to="/webdevelopment">Web Development</MenuItem>
+          <MenuItem onClick={handleClose} component={Link} to="/seo">SEO</MenuItem>
+          <MenuItem onClick={handleClose} component={Link} to="/graphicdesign">Graphic Design</MenuItem>
+        </Menu>
+
+        <Button component={Link} to="/contact" color="inherit" sx={{ mr: 2 }}>
+          Contact
+        </Button>
+        <Button component={Link} to="/blog" color="inherit" sx={{ mr: 2 }}>
+          Blog
+        </Button>
+        <Button component={Link} to="/about" color="inherit" sx={{ mr: 2 }}>
+          About Us
+        </Button>
+        <Button component={Link} to="/writeforus" color="inherit" sx={{ mr: 2 }}>
+          Write For Us
+        </Button>
+        
+        {/* Get a Quote Button */}
+        <Button variant="contained" style={{ backgroundColor: "#4A7766", color: "#fff" }}>
+          Get a Quote
+        </Button>
+      </Toolbar>
+    </AppBar>
   );
 }
 
 export default Header;
+
