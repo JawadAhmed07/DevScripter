@@ -5,10 +5,8 @@ import React from "react";
 function Contact() {
   return (
     <>
-      {/* Top Section with Background Image */}
-      <Box
-        className="proposal"
-      >
+      {/* Subheader Section with Background Image */}
+      <Box className="proposal">
         <Typography variant="h4" align="center" color="#fff" gutterBottom>
           Contact Us
         </Typography>
@@ -18,36 +16,36 @@ function Contact() {
       </Box>
 
       {/* Contact detail section */}
-      <Box py={0} mt={0}>
+      <Box textAlign={"center"} fontSize={"20px"}>
         <Grid container>
           {/* Pakistan Office */}
           <Grid item xs={12} md={4}>
-            <Box p={6}>
+            <Box p={6} height={"100%"}>
               <PlaceOutlined />
-              <Typography variant="h6" className="font-bold mb-2">
+              <Typography variant="h6" className="font-bold mb-2 py-5">
                 Pakistan Office
               </Typography>
-              <Typography>
+              <Typography className="py-5">
                 Suite# 610, Park Avenue, PECHS Block-6, Karachi 75400, Pakistan
               </Typography>
-              <Typography>Timings: 10 AM to 6 PM (GMT+5)</Typography>
+              <Typography className="py-5">Timings: 10 AM to 6 PM (GMT+5)</Typography>
             </Box>
           </Grid>
 
           {/* Contact Information */}
           <Grid item xs={12} md={4}>
-            <Box p={6} sx={{ backgroundColor: "#f4f4f4", color: "#333" }}>
+            <Box p={6} sx={{ backgroundColor: "#f4f4f4", color: "#333", height: "100%" }}>
               <MailOutlined />
               <Box>
-                <Typography variant="h6" className="font-bold mb-2">
+                <Typography variant="h6" className="font-bold mb-2 py-5">
                   Contact Us
                 </Typography>
                 <Typography>Call (US): (832) 548-5844</Typography>
                 <Typography>Call (Pak): +92-309-2156445</Typography>
               </Box>
               <Box>
-                <Typography variant="h6" className="font-bold mb-2">
-                  Email Us
+                <Typography variant="h6" className="font-bold mb-2 py-5">
+                  Email Us 
                 </Typography>
                 <Typography>General: hello(@)zeracreative.com</Typography>
                 <Typography>HR: hr(@)zeracreative.com</Typography>
@@ -57,9 +55,9 @@ function Contact() {
 
           {/* USA Offices */}
           <Grid item xs={12} md={4}>
-            <Box p={6} sx={{ backgroundColor: "#000", color: "#fff" }}>
+            <Box p={6} sx={{ backgroundColor: "#000", color: "#fff", height: "100%" }}>
               <PlaceOutlined />
-              <Typography variant="h6" className="font-bold mb-2">
+              <Typography variant="h6" className="font-bold mb-2 py-5">
                 USA Offices
               </Typography>
               <Typography>
@@ -68,19 +66,16 @@ function Contact() {
               <Typography>
                 Office #2: 49 Smith St. Saint Cloud, MN 56301.
               </Typography>
-              <Typography>Timings: 10 AM to 6 PM (GMT+5)</Typography>
-              <Typography variant="h6" mt={2}>
-                DEVSCRIPTER
-              </Typography>
+              <Typography className="py-5">Timings: 10 AM to 6 PM (GMT+5)</Typography>
             </Box>
           </Grid>
         </Grid>
       </Box>
 
       {/* Contact us form */}
-      <Box sx={{ backgroundColor: "#4A7766" }}>
+      <Box sx={{ backgroundColor: "#4A7766", height:"100%", padding: "40px" }} >
         <section className="text-gray-600 body-font relative">
-          <div className="container px-5 py-10 mx-auto">
+          <div className="container mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                 Get in touch
