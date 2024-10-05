@@ -13,7 +13,7 @@
 .seo-first-page::before {
     content: "";
     position: absolute;
-    top: 80px;
+    top: 63px;
     left: 0;
     right: 0;
     bottom: 0;

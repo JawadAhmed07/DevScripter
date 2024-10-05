@@ -15,72 +15,12 @@ import ArrowBackIosNewSharpIcon from '@mui/icons-material/ArrowBackIosNewSharp';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import Features from "../components/Features";
 import Requestproposal from '../components/Requestproposal';
+import Reviews from '../components/reviews';
 
 function Home() {
 
-    const testimonials = [
-        {
-            img: "https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-2eabcc3/thriveagency.com/files/Brandon-O-e1482942080144.jpg",
-            text: "Since having our new website built by Thrive, we have seen a 200% increase in the number of online contact forms being filled out and returned to us. The end result was a website that is attractive, organized and effective.",
-            name: "Brandon O’Brien",
-            title: "-Senior Product Designer",
-            company: "Demilec (USA), LLC"
-        },
-        {
-            img: "https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-2eabcc3/thriveagency.com/files/Kee-Service-e1482945003957.jpg",
-            text: "We at Kee Service were very impressed with the all aspects of our new website. We would highly reccomend Thrive to anyone looking to build a new website.",
-            name: "Ross Asher",
-            title: "- Owner",
-            company: "Kee Service Co."
-        },
-        {
-            img: "https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-2eabcc3/thriveagency.com/files/John-C-e1482943709835.jpg",
-            text: "This team exceeded our expectations with the website redesign. They delivered a clean, modern platform that perfectly fits our brand, and our customer engagement has soared. We’ve seen a 150% increase in inquiries since the update. Highly recommend them for top-notch web development!",
-            name: "Alex Martinez",
-            title: "-Marketing Director",
-            company: " Brightwave Solutions"
-        },
-        {
-            img: "https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-2eabcc3/thriveagency.com/files/Cathy-O-e1482945620792.png",
-            text: "Thrive listened to everything we needed and wanted in a new website, then delivered it! Our new website is fun, exciting and easy to use for me and our audiences. I have gone through website redesigns before, and by far, this one was the easiest and least painful. I was listened to and respected through every step. We couldn’t be happier with our new website",
-            name: "Cathy O’Neal",
-            title: "-Communications Director",
-            company: "Levitt Pavilion Arlington, TX"
-        },
-        {
-            img: "https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-2eabcc3/thriveagency.com/files/Debi-Maerz.jpg",
-            text: "Quick response to changes/questions/ideas. Someone always answers right away.",
-            name: "Debi Maerz",
-            title: "Small business women",
-            company: "Bakke Graduate Institute."
-        },
-        {
-            img: "https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-2eabcc3/thriveagency.com/files/Melissa-M-e1482946329588.jpg",
-            text: "We have been very happy with our new website! It looks professional and very easy to navigate. Thrive handles things efficiently and is available for any questions we have.",
-            name: "Melissa Montiel",
-            title: "-Marketing Director",
-            company: "Sterling Protective Services, Inc."
-        },
-    ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    // Move to next testimonial automatically after 5 seconds
-    useEffect(() => {
-        const interval = setInterval(() => {
-            nextTestimonial();
-        }, 50000000); // 5000ms = 5 seconds
-        return () => clearInterval(interval); // Clear interval on component unmount
-    }, [currentIndex]);
-
-    const nextTestimonial = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    };
-
-    const prevTestimonial = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
-    };
-
 
     const [expanded, setExpanded] = useState(false);
     const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -633,49 +573,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* seventhsection (client testimonial) */}
-            <section
-                style={{ backgroundColor: "#4A7766" }}
-                className="text-gray-600 body-font"
-            >
-                <h1 className="text-2xl text-center text-white capitalize mb-4">Testimonials</h1>
-                <h1 className="text-4xl font-medium text-center text-white capitalize mb-12">
-                    What our clients say
-                </h1>
-                <div className="container mx-auto px-5 py-10">
-                    <div className="testimonial-container">
-                        {testimonials.slice(currentIndex, currentIndex + 2).map((testimonial, index) => (
-                            <div className="testimonial-card" key={index}>
-                                <img
-                                    alt="testimonial"
-                                    className="object-cover object-center"
-                                    src={testimonial.img}
-                                />
-                                <p className="leading-relaxed text-gray-600">{testimonial.text}</p>
-                                <span className="inline-block" />
-                                <h2 className="text-gray-900 font-medium title-font tracking-wider">
-                                    {testimonial.name}
-                                </h2>
-                                <p className="text-gray-600">{testimonial.title} <br /> {testimonial.company}</p>
-                            </div>
-                        ))}
-                    </div>
-                    {/* Previous button */}
-                    <button
-                        onClick={prevTestimonial}
-                        className="absolute left-0 ml-5 text-2xl hover:bg-gray-400 text-green-500 font-bold px-4 rounded-full"
-                    >
-                        <ArrowBackIosNewSharpIcon />
-                    </button>
-                    {/* Next button */}
-                    <button
-                        onClick={nextTestimonial}
-                        className="absolute right-0 mr-5 text-2xl hover:bg-gray-400 text-green-500 font-bold px-4 rounded-full"
-                    >
-                        <ArrowForwardIosSharpIcon />
-                    </button>
-                </div>
-            </section>
+            
             {/* Accordion */}
             <section 
             // style={{ backgroundColor: "#ECE7E2" }}
@@ -801,6 +699,8 @@ function Home() {
                     <img className='w-auto h-auto mt-10 pl-16 ' src="https://w3torch.com/wp-content/uploads/2023/02/web-development-services-1.png" alt="" />
                 </div>
             </section>
+            {/* seventhsection (client testimonial) */}
+           <Reviews/>
             {/* eight section (get in touch with us) */}
             <Requestproposal/>
         </>
