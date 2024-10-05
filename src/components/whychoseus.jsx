@@ -1,5 +1,5 @@
 
-import questionmark from '../Images/Gdpage/question-mark.png';
+import questionmark from '../Images/gd/question-mark.png';
 
 function WhyChooseUs(probs) {
     return (

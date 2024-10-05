@@ -11,6 +11,8 @@ import websitedes from '../Images/websitedes.png';
 import websitedesign from '../Images/websitedesign.png';
 import websitedesign3 from '../Images/websitedesign3.png';
 import WhyChooseUs from '../components/whychoseus';
+import Reviews from '../components/reviews';
+import Requestproposal from '../components/Requestproposal';
 
 // import featureImage4 from '../Images/feature4.png';
 
@@ -354,6 +356,8 @@ function Webdevelopment() {
                 </div>
             </section>
             <WhyChooseUs data={"YOUR WEB DEVELOPMENT COMPANY"}/>
+            <Reviews/>
+            <Requestproposal/>
         </>
     )
 }

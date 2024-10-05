@@ -1,44 +1,61 @@
+import { Button } from "antd";
 import WhyChooseUs from "../components/whychoseus";
+import hand from '../Images/gd/hand.webp';
+import Reviews from '../components/reviews';
 
 
 function GraphicDesign() {
     return (
         <>
             {/* !st section */}
-            <section className="text-gray-100 h-96 body-font bg-black">
-                <h1 className="text-5xl font-medium text-center py-5">Best Graphic design service</h1>
-                <p className="text-center ">Dev Scripters , a reputed graphic design agency in Pakistan, creates unforgettable experiences that will confined your audience and force your business forward.</p>
+            <section
+                style={{
+                    backgroundImage: `url(${hand})`,
+                }}
+                className="text-gray-100 h-96 body-font bg-cover bg-center relative"
+            >
+                <div className="absolute inset-0 bg-black opacity-50"></div> {/* Optional overlay for better readability */}
+                <div className="relative z-10">
+                    <h1 className="text-5xl font-bold text-center p-10">Best Graphic Design Service</h1>
+                    <p className="text-center  text-lg w-2/3 mx-auto ">
+                        Dev Scripters, a reputed graphic design agency in Pakistan, creates unforgettable experiences that will captivate your audience and propel your business forward.
+                    </p>
+                </div>
             </section>
             {/* 2nd section */}
-            <section className="text-gray-600 body-font">
+            <section className="text-gray-600 px-5 md:px-20 body-font">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                            Before they sold out
-                            <br className="hidden lg:inline-block" />
-                            readymade gluten
+                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">
+                            Top Graphic Design
+                            <br className="hidden md:block" /> {/* Line break for smaller screens */}
+                            Company in Pakistan
                         </h1>
                         <p className="mb-8 leading-relaxed">
-                            Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
-                            plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk
-                            tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard
-                            chambray.
+                            Around 94% of customers leave a website with poor graphics. The need for captivating visuals is undeniable. Who does not like inspiring visuals and interesting designs? Above all, graphic designs help sketch a premier personality of your brand. It adds life to your business model and inspires viewers to stick through.
+                        </p>
+                        <p className="mb-8 leading-relaxed">
+                            Irrespective of your industry, you need a combination of good content with engaging visuals to entice your audience. At Zera Creative, we have a huge panel of top graphic designers with a knack for creativity who never fail to amuse their viewers.
                         </p>
                         <div className="flex justify-center">
-                            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                                Button
-                            </button>
-                            <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                                Button
+                            <button className="bg-cyan-500 p-3 md:p-5 text-white rounded-md shadow-lg hover:bg-cyan-600 transition duration-300">
+                                Contact Us
                             </button>
                         </div>
                     </div>
-                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img
-                            className="object-cover object-center rounded"
-                            alt="hero"
-                            src="https://dummyimage.com/720x600"
-                        />
+
+                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full">
+                        <div className="aspect-w-16 h-96">
+                            <iframe
+                                className="w-full h-full"
+                                src="https://www.youtube.com/embed/4yVwopzpWEY"
+                                title="Best Graphic Design Agency in Pakistan - Zera Creative Agency"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen>
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -46,13 +63,14 @@ function GraphicDesign() {
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-                        <h1 className="sm:text-3xl text-2xl capitalize font-medium title-font mb-2 text-gray-900">
-                            Our impressive graphic deisgn service
+                        <h1 className=" text-4xl uppercase font-bold title-font mb-2 text-gray-900">
+                        Our Impressive Graphic Design Services
 
                         </h1>
-                        <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-                            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                            gentrify, subway tile poke farm-to-table.
+                        <p className="lg:w-2/3 w-full leading-relaxed text-gray-500">
+                        Offering a one-stop solution to all your design needs, Zera Creative is a professional design agency in Pakistan that offers a broad range of services. Giving precise attention to details, we aim to offer long-lasting visuals that boost your engagements organically.
+
+
                         </p>
                     </div>
                     <div className="flex flex-wrap m-4">
@@ -322,7 +340,7 @@ function GraphicDesign() {
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                        Why choose us
+                            Why choose us
                         </h1>
                         <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
                             Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
@@ -333,7 +351,7 @@ function GraphicDesign() {
                         <div className="xl:w-1/3 md:w-1/2 py-4 -m-4 px-14">
                             <div className="border text-center border-gray-200 p-6 rounded-lg">
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                Fast Turnaround Time
+                                    Fast Turnaround Time
                                 </h2>
                                 <p className="leading-relaxed text-base">
                                     Fingerstache flexitarian street art 8-bit waist co, subway tile poke
@@ -344,7 +362,7 @@ function GraphicDesign() {
                         <div className="xl:w-1/3 md:w-1/2 py-4 -m-4 px-14">
                             <div className="border text-center border-gray-200 p-6 rounded-lg">
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                Fast Turnaround Time
+                                    Fast Turnaround Time
                                 </h2>
                                 <p className="leading-relaxed text-base">
                                     Fingerstache flexitarian street art 8-bit waist co, subway tile poke
@@ -355,7 +373,7 @@ function GraphicDesign() {
                         <div className="xl:w-1/3 md:w-1/2 py-4 -m-4 px-14">
                             <div className="border text-center border-gray-200 p-6 rounded-lg">
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                Fast Turnaround Time
+                                    Fast Turnaround Time
                                 </h2>
                                 <p className="leading-relaxed text-base">
                                     Fingerstache flexitarian street art 8-bit waist co, subway tile poke
@@ -366,7 +384,7 @@ function GraphicDesign() {
                         <div className="xl:w-1/3 md:w-1/2 py-4 -m-4 px-14">
                             <div className="border text-center border-gray-200 p-6 rounded-lg">
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                Fast Turnaround Time
+                                    Fast Turnaround Time
                                 </h2>
                                 <p className="leading-relaxed text-base">
                                     Fingerstache flexitarian street art 8-bit waist co, subway tile poke
@@ -377,7 +395,7 @@ function GraphicDesign() {
                         <div className="xl:w-1/3 md:w-1/2 py-4 -m-4 px-14">
                             <div className="border text-center border-gray-200 p-6 rounded-lg">
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                Fast Turnaround Time
+                                    Fast Turnaround Time
                                 </h2>
                                 <p className="leading-relaxed text-base">
                                     Fingerstache flexitarian street art 8-bit waist co, subway tile poke
@@ -388,7 +406,7 @@ function GraphicDesign() {
                         <div className="xl:w-1/3 md:w-1/2 py-4 -m-4 px-14">
                             <div className="border text-center border-gray-200 p-6 rounded-lg">
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                Fast Turnaround Time
+                                    Fast Turnaround Time
                                 </h2>
                                 <p className="leading-relaxed text-base">
                                     Fingerstache flexitarian street art 8-bit waist co, subway tile poke
@@ -402,8 +420,8 @@ function GraphicDesign() {
                     </button>
                 </div>
             </section>
-             {/* testimonials fake google reviews add krny hain ismy */}
-             <section className="text-gray-600 body-font">
+            {/* testimonials fake google reviews add krny hain ismy */}
+            {/* <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <h1 className="text-3xl font-medium title-font text-gray-900 mb-12 text-center">
                         Testimonials
@@ -473,9 +491,10 @@ function GraphicDesign() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
+            <Reviews/>
             {/* why choose us */}
-            <WhyChooseUs data={"YOUR DESIGN PARTNER"}/>
+            <WhyChooseUs data={"YOUR DESIGN PARTNER"} />
 
 
 

@@ -3,7 +3,7 @@ import google from '../Images/google.png';
 // import person2 from '../Images/person/person2.jpeg';
 
 import React, { useEffect, useState } from 'react';
-import reviewsImage from '../Images/GdPage/review.png'; // Assuming correct image path
+import reviewsImage from '../Images/gd/review.png'; // Assuming correct image path
 
 // Define fake reviews data
 const reviewsData = [
