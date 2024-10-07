@@ -656,9 +656,10 @@ function Seo() {
                     </div>
                 </div>
             </section> */}
-            <Reviews />
+            
             {/* why choose us */}
             <WhyChooseUs data={"BEST SEO COMPANY"} />
+            <Reviews />
             {/* free seo audit */}
             <section
             style={{
