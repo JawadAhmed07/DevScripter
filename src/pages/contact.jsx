@@ -73,14 +73,14 @@ function Contact() {
       </Box>
 
       {/* Contact us form */}
-      <Box sx={{ backgroundColor: "#4A7766", height:"100%", padding: "40px" }} >
-        <section className="text-gray-600 body-font relative">
+      <Box sx={{ height:"100%", padding: "40px" }} className="bg-gray-100 border" >
+        <section className=" body-font relative">
           <div className="container mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-black">
                 Get in touch
               </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-white">
+              <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-black">
                 Let's work together.
               </p>
             </div>
@@ -90,7 +90,7 @@ function Contact() {
                   <div className="relative">
                     <label
                       htmlFor="name"
-                      className="leading-7 text-sm text-white"
+                      className="leading-7 text-sm text-black"
                     >
                       Name
                     </label>
@@ -107,7 +107,7 @@ function Contact() {
                   <div className="relative">
                     <label
                       htmlFor="email"
-                      className="leading-7 text-sm text-white"
+                      className="leading-7 text-sm text-black"
                     >
                       Email
                     </label>
@@ -125,7 +125,7 @@ function Contact() {
                   <div className="relative">
                     <label
                       htmlFor="number"
-                      className="leading-7 text-sm text-white"
+                      className="leading-7 text-sm text-black"
                     >
                       Phone Number
                     </label>
@@ -142,7 +142,7 @@ function Contact() {
                   <div className="relative">
                     <label
                       htmlFor="budget"
-                      className="leading-7 text-sm text-white"
+                      className="leading-7 text-sm text-black"
                     >
                       Budget
                     </label>
@@ -159,7 +159,7 @@ function Contact() {
                   <div className="relative">
                     <label
                       htmlFor="service"
-                      className="leading-7 text-sm text-white"
+                      className="leading-7 text-sm text-black"
                     >
                       Which service are you interested in? *
                     </label>
@@ -182,7 +182,7 @@ function Contact() {
                   <div className="relative">
                     <label
                       htmlFor="message"
-                      className="leading-7 text-sm text-white"
+                      className="leading-7 text-sm text-black"
                     >
                       Message
                     </label>
