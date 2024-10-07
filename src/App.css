@@ -69,3 +69,29 @@
     background-repeat: no-repeat;
     opacity: 0.9;
 }
+
+/* Custom styles for DropdownMenu */
+.custom-dropdown-menu {
+    background-color: #f0f0f0; /* Background color for the menu */
+    color: #333; /* Text color */
+    max-height: 300px; /* Set maximum height for the menu */
+    overflow-y: auto; /* Enable scrolling when content exceeds height */
+    border: 1px solid #ddd; /* Add border around the dropdown menu */
+    border-radius: 8px; /* Rounded corners for the dropdown menu */
+  }
+  
+  .custom-dropdown-menu-item {
+    color: #007bff; /* Text color for menu items */
+    padding: 10px 16px; /* Padding for items */
+    border-bottom: 1px solid #ddd; /* Border between items */
+  }
+  
+  .custom-dropdown-menu-item:last-child {
+    border-bottom: none; /* Remove border from the last item */
+  }
+  
+  .custom-dropdown-menu-item:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: white; /* Text color on hover */
+  }
+  
