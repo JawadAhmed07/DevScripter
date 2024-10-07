@@ -16,7 +16,7 @@ function Header() {
   };
 
   return (
-    <AppBar position="static" style={{ backgroundColor: "#fff", color: "#4A7766", boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)" }}>
+    <AppBar position="fixed" style={{ backgroundColor: "#fff", color: "#4A7766", boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)" }}>
       <Toolbar>
         <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
           <img
