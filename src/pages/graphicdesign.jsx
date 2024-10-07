@@ -87,265 +87,265 @@ function GraphicDesign() {
                         <div className="xl:w-1/4 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Branding / Brand Identity
+                                    Branding / Brand Identity
                                 </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                We cater to a complete range of branding design needs to make your brand stand out.
+                                    We cater to a complete range of branding design needs to make your brand stand out.
                                 </p>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Company Profile Design
+                                    Company Profile Design
                                 </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                Throw a professional outlook of your business on your prospects.
+                                    Throw a professional outlook of your business on your prospects.
                                 </p>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Stationery Design
+                                    Stationery Design
                                 </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                With distinctive aesthetics, we offer a massive range of stationary design services.
+                                    With distinctive aesthetics, we offer a massive range of stationary design services.
                                 </p>
                             </div>
                         </div>
                         <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Business Card Design
+                                    Business Card Design
                                 </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                Get incredible business card designs compared to the best graphic design companies.
+                                    Get incredible business card designs compared to the best graphic design companies.
                                 </p>
                             </div>
                         </div>
                         <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Envelope Design
+                                    Envelope Design
                                 </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                Get a promising appeal and ensure progressive growth with finest envelope designs.
+                                    Get a promising appeal and ensure progressive growth with finest envelope designs.
                                 </p>
                             </div>
                         </div>
                         <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Label Design
+                                    Label Design
                                 </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                Establish a highly authoritative outlook on your brand with fully customised label designs.
+                                    Establish a highly authoritative outlook on your brand with fully customised label designs.
                                 </p>
                             </div>
                         </div>
                         <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Letterhead Design
+                                    Letterhead Design
                                 </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                Complete your brand’s looks complete with a professionally designed letterhead.
+                                    Complete your brand’s looks complete with a professionally designed letterhead.
                                 </p>
                             </div>
                         </div>
                         <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Trade Show Booth Design
+                                    Trade Show Booth Design
 
-                              </h2>
-                                <p className="leading-relaxed text-white text-base">
-                                Zera Creative knows the worth of a bespoke, quality designed trade show booth.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="xl:w-1/4 md:w-1/2 py-2 px-5">
-                            <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
-                                <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Ads Design
                                 </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                Striking appeal, targeted approach, and bold aesthetics, the perfect ad designs.
+                                    Zera Creative knows the worth of a bespoke, quality designed trade show booth.
                                 </p>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Social Media Post Design
-
-                              </h2>
+                                    Ads Design
+                                </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                We know the art to engage your social audience with impeccable post designs.
+                                    Striking appeal, targeted approach, and bold aesthetics, the perfect ad designs.
                                 </p>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                App Design
+                                    Social Media Post Design
 
-                              </h2>
+                                </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                Our best logo designers offer immersive, seamless and intuitive app designs.
-
-</p>
+                                    We know the art to engage your social audience with impeccable post designs.
+                                </p>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Banner Design
+                                    App Design
 
-                              </h2>
+                                </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                Create a lasting impression on your audience and let banner designs define your business.
+                                    Our best logo designers offer immersive, seamless and intuitive app designs.
 
-</p>
-                            </div>
-                        </div>
-                        <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
-                            <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
-                                <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Flyer Design
-
-                              </h2>
-                                <p className="leading-relaxed text-white text-base">
-                                We offer simplistic yet inspiring flyer designs with striking emotional connections.
-
-</p>
-                            </div>
-                        </div>
-                        <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
-                            <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
-                                <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Poster Design
-
-                              </h2>
-                                <p className="leading-relaxed text-white text-base">
-                                Be bold and daring with a trendy poster design to bring out an appeal to your brand.
-
-</p>
-                            </div>
-                        </div>
-                        <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
-                            <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
-                                <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Resume Design
-
-                              </h2>
-                                <p className="leading-relaxed text-white text-base">
-                                We create utterly professional and minimalistic resume designs for our clients.
-
-</p>
-                            </div>
-                        </div>
-                        <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
-                            <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
-                                <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Menu Design
-
-                              </h2>
-                                <p className="leading-relaxed text-white text-base">
-                                Add perfection and precision to your website with the interesting menu designs.
-
-
-</p>
-                            </div>
-                        </div>
-                        <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
-                            <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
-                                <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Print Design
-
-                              </h2>
-                                <p className="leading-relaxed text-white text-base">
-                                Immaculate and flawless, that’s how we define our incredible print designs.
-
-
-</p>
+                                </p>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Catalogue Design
+                                    Banner Design
 
-                              </h2>
+                                </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                Show the potential of your business with attention-grabbing catalogue designs.
+                                    Create a lasting impression on your audience and let banner designs define your business.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
+                            <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
+                                <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
+                                    Flyer Design
+
+                                </h2>
+                                <p className="leading-relaxed text-white text-base">
+                                    We offer simplistic yet inspiring flyer designs with striking emotional connections.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
+                            <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
+                                <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
+                                    Poster Design
+
+                                </h2>
+                                <p className="leading-relaxed text-white text-base">
+                                    Be bold and daring with a trendy poster design to bring out an appeal to your brand.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
+                            <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
+                                <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
+                                    Resume Design
+
+                                </h2>
+                                <p className="leading-relaxed text-white text-base">
+                                    We create utterly professional and minimalistic resume designs for our clients.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
+                            <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
+                                <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
+                                    Menu Design
+
+                                </h2>
+                                <p className="leading-relaxed text-white text-base">
+                                    Add perfection and precision to your website with the interesting menu designs.
 
 
-</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="xl:w-1/5 md:w-1/2 py-2 px-5">
+                            <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
+                                <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
+                                    Print Design
+
+                                </h2>
+                                <p className="leading-relaxed text-white text-base">
+                                    Immaculate and flawless, that’s how we define our incredible print designs.
+
+
+                                </p>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Brochure Design
+                                    Catalogue Design
 
-                              </h2>
+                                </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                Two-folds to three-folds and much more. We offer a huge versatility in brochure designs.
+                                    Show the potential of your business with attention-grabbing catalogue designs.
 
 
-</p>
+                                </p>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Infographic Design
+                                    Brochure Design
+
+                                </h2>
+                                <p className="leading-relaxed text-white text-base">
+                                    Two-folds to three-folds and much more. We offer a huge versatility in brochure designs.
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <div className="xl:w-1/4 md:w-1/2 py-2 px-5">
+                            <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
+                                <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
+                                    Infographic Design
                                 </h2>
                                 <p className="leading-relaxed text-white  text-base">
-                                Deliver a plethora of information with eye-catching infographic visuals.
+                                    Deliver a plethora of information with eye-catching infographic visuals.
 
-</p>
+                                </p>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Packaging Design
+                                    Packaging Design
 
-                              </h2>
+                                </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                Zera Creative offers the highest quality packaging designs to entice the customers.
+                                    Zera Creative offers the highest quality packaging designs to entice the customers.
 
 
-</p>
+                                </p>
                             </div>
                         </div>
                         <div className="xl:w-1/2 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                T-shirt Design
+                                    T-shirt Design
 
-                              </h2>
+                                </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                It’s not what we do, it’s how we do. Get captivating T-shirt design services.
+                                    It’s not what we do, it’s how we do. Get captivating T-shirt design services.
 
 
-</p>
+                                </p>
                             </div>
                         </div>
                         <div className="xl:w-1/2 md:w-1/2 py-2 px-5">
                             <div className="border text-center border-gray-200 p-6 rounded-lg bg-cyan-700">
                                 <h2 className="text-lg text-gray-100 font-medium text-center title-font mb-2">
-                                Book Cover Design
+                                    Book Cover Design
 
-                              </h2>
+                                </h2>
                                 <p className="leading-relaxed text-white text-base">
-                                Sleek, eye-catchy and inspiring book cover designs that boost sales.
+                                    Sleek, eye-catchy and inspiring book cover designs that boost sales.
 
 
-</p>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -355,15 +355,24 @@ function GraphicDesign() {
                 </div>
             </section>
             {/* Our process of working */}
-            <section className="text-gray-600 body-font">
-                <div className="container px-5 py-24 mx-auto flex flex-wrap">
+            <section className="text-gray-100 bg-black body-font">
+                    <div className="text-center pt-10">
+                        <h1 className="text-white text-4xl uppercase font-bold  text-center">Our Process
+                        </h1>
+                        <h2 className="pt-5 capitalize text-md">Turning Your ideas Into Reality
+                        </h2>
+                        <p className="w-2/3 pt-5 text-lg mx-auto">You know what’s the biggest perk to work with one of the notable best design agencies in Pakistan? Its accuracy, efficient communication and best top quality services. Zera Creative offers high quality vector design services with a sound process to ensure perfection.
+
+</p>
+                    </div>
+                <div className="container px-20 py-24 mx-auto flex flex-wrap">
                     <div className="flex flex-wrap w-full">
                         <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
                             <div className="flex relative pb-12">
                                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                                     <div className="h-full w-1 bg-gray-200 pointer-events-none" />
                                 </div>
-                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-cyan-700 inline-flex items-center justify-center text-white relative z-10">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
@@ -377,12 +386,14 @@ function GraphicDesign() {
                                     </svg>
                                 </div>
                                 <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                                        STEP 1
+                                    <h2 className="font-medium title-font text-xl text-white mb-1 tracking-wider">
+                                        1. Business Understanding
+
                                     </h2>
                                     <p className="leading-relaxed ">
-                                        VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                                        bespoke try-hard cliche palo santo offal.
+                                        First, our graphic designers conduct in-depth research and gather details to understand the company fully. We learn about the competitors and buyer’s persona and make notes about the pain points of the audience to target.
+
+
                                     </p>
                                 </div>
                             </div>
@@ -390,7 +401,7 @@ function GraphicDesign() {
                                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                                     <div className="h-full w-1 bg-gray-200 pointer-events-none" />
                                 </div>
-                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-cyan-700 inline-flex items-center justify-center text-white relative z-10">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
@@ -404,12 +415,14 @@ function GraphicDesign() {
                                     </svg>
                                 </div>
                                 <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                                        STEP 2
+                                    <h2 className="font-medium title-font text-xl text-white mb-1 tracking-wider">
+                                    2. Strategic Planning
+
                                     </h2>
                                     <p className="leading-relaxed">
-                                        Vice migas literally kitsch +1 pok pok. Truffaut hot chicken
-                                        slow-carb health goth, vape typewriter.
+                                    Zera Creative is regarded as one of the top creative agencies in Pakistan for its targeted approach. Every aspect of the design, from angles to icons to aesthetics, brings out your brand’s unique personality.
+
+
                                     </p>
                                 </div>
                             </div>
@@ -417,7 +430,7 @@ function GraphicDesign() {
                                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                                     <div className="h-full w-1 bg-gray-200 pointer-events-none" />
                                 </div>
-                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-cyan-700 inline-flex items-center justify-center text-white relative z-10">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
@@ -432,12 +445,14 @@ function GraphicDesign() {
                                     </svg>
                                 </div>
                                 <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                                        STEP 3
+                                    <h2 className="font-medium title-font text-xl text-white mb-1 tracking-wider">
+                                    3. Graphical Implementation
+
                                     </h2>
                                     <p className="leading-relaxed">
-                                        Coloring book nar whal glossier master cleanse umami. Salvia +1
-                                        master cleanse blog taiyaki.
+                                    Using top-notch tools and software, we strive to add a blazing flare of creativity to our designs. We ensure to offer the most unique and captivating glimpse in every design that can capture the attention at a glance.
+
+
                                     </p>
                                 </div>
                             </div>
@@ -445,7 +460,7 @@ function GraphicDesign() {
                                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                                     <div className="h-full w-1 bg-gray-200 pointer-events-none" />
                                 </div>
-                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-cyan-700 inline-flex items-center justify-center text-white relative z-10">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
@@ -460,17 +475,19 @@ function GraphicDesign() {
                                     </svg>
                                 </div>
                                 <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                                        STEP 4
+                                    <h2 className="font-medium title-font text-xl text-white mb-1 tracking-wider">
+                                    4. Result Measurement
+
                                     </h2>
                                     <p className="leading-relaxed">
-                                        VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                                        bespoke try-hard cliche palo santo offal.
+                                    For us, it’s not only about the clients who should be amused, but we ponder on the ROI every design generates. That’s our real achievement. We make sure our designs prove profitable and productive for your business.
+
+
                                     </p>
                                 </div>
                             </div>
                             <div className="flex relative">
-                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-cyan-700 inline-flex items-center justify-center text-white relative z-10">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
@@ -485,7 +502,7 @@ function GraphicDesign() {
                                     </svg>
                                 </div>
                                 <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                                    <h2 className="font-medium title-font text-xl text-white mb-1 tracking-wider">
                                         FINISH
                                     </h2>
                                     <p className="leading-relaxed">
@@ -495,8 +512,9 @@ function GraphicDesign() {
                                 </div>
                             </div>
                         </div>
+                        {/* // lg:w-3/5 md:w-1/2 */}
                         <img
-                            className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+                            className="w-auto object-cover object-center rounded-lg md:mt-0 mt-12"
                             src={process}
                             alt="step"
                         />
@@ -504,9 +522,9 @@ function GraphicDesign() {
                 </div>
             </section>
             {/* text content */}
-            <section className="bg-black py-10">
-                <h1 className="text-4xl text-white capitalize font-bold text-center ">Our custom graphic design to change the game</h1>
-                <p className="text-center text-white px-44 items-center justify-center mx-auto py-10 ">Design is all about touching the emotions of the viewers. At Zera Creative, one of the best graphic design agency in Pakistan, we put prime focus on understanding the motive and purpose of the design. We value the sentiments and show complete dedication to helping you reach your creative targets. Our graphic design firm has worked for over a decade and always stood up to our customers’ expectations. No matter if you have an unclear idea in your mind, get in touch with our professionals, and they have the expertise to bring out the true vision and turn it into a beautiful reality.</p>
+            <section className="bg-white py-10">
+                <h1 className="text-4xl text-black capitalize font-bold text-center ">Our custom graphic design to change the game</h1>
+                <p className="text-center text-black px-44 items-center justify-center mx-auto py-10 ">Design is all about touching the emotions of the viewers. At Zera Creative, one of the best graphic design agency in Pakistan, we put prime focus on understanding the motive and purpose of the design. We value the sentiments and show complete dedication to helping you reach your creative targets. Our graphic design firm has worked for over a decade and always stood up to our customers’ expectations. No matter if you have an unclear idea in your mind, get in touch with our professionals, and they have the expertise to bring out the true vision and turn it into a beautiful reality.</p>
 
 
             </section>
@@ -514,85 +532,107 @@ function GraphicDesign() {
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                            Why choose us
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 uppercase text-gray-900">
+                        Why Count On Dev Scripters?
                         </h1>
                         <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-                            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                            gentrify, subway tile poke farm-to-table.
+                        Dev Scripters is a hub of competent and best graphic designers of Pakistan. With our comprehensive range of design services, we help brands with noteworthy conceptualisation and appeal. Here are some of the many reasons we can help you grow with impeccable graphic designs.
+
+
                         </p>
                     </div>
-                    <div className="flex gap-y-10 flex-wrap -m-4">
-                        <div className="xl:w-1/3 md:w-1/2 py-4 -m-4 px-14">
-                            <div className="border text-center border-gray-200 p-6 rounded-lg">
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
+                    <div className="flex gap-y-10 flex-wrap px-20 container">
+                        <div className="xl:w-1/4 md:w-1/2 py-2 -m-4 px-10">
+                            <div className="border text-center bg-cyan-700 border-gray-200 p-6 rounded-lg">
+                                <h2 className="text-lg text-white font-medium title-font mb-2">
                                     Fast Turnaround Time
                                 </h2>
-                                <p className="leading-relaxed text-base">
-                                    Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-                                    farm.
+                                <p className="leading-relaxed text-white text-base">
+                                The experts of our graphic design firm guarantee to deliver a design within the first 48 hours. We ensure to fulfil the needs of our clients and drive creativity in every design. Every aspect of the visual resonates with the customer’s brand identity.
+
+
                                 </p>
                             </div>
                         </div>
-                        <div className="xl:w-1/3 md:w-1/2 py-4 -m-4 px-14">
-                            <div className="border text-center border-gray-200 p-6 rounded-lg">
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                    Fast Turnaround Time
+                        <div className="xl:w-1/4 md:w-1/2 py-2 -m-4 px-10">
+                            <div className="border text-center bg-cyan-700 border-gray-200 p-6 rounded-lg">
+                                <h2 className="text-lg text-white font-medium title-font mb-2">
+                                Unlimited Revisions
                                 </h2>
-                                <p className="leading-relaxed text-base">
-                                    Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-                                    farm.
+                                <p className="leading-relaxed text-white text-base">
+                                We work till our clients are fully satisfied. So, do not worry about revisions. We value your sentiments and are committed to driving a positive change in your company’s success through our services. So, feel free to share your feedback.
+
+
                                 </p>
                             </div>
                         </div>
-                        <div className="xl:w-1/3 md:w-1/2 py-4 -m-4 px-14">
-                            <div className="border text-center border-gray-200 p-6 rounded-lg">
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                    Fast Turnaround Time
+                        <div className="xl:w-1/4 md:w-1/2 py-2 -m-4 px-10">
+                            <div className="border text-center bg-cyan-700 border-gray-200 p-6 rounded-lg">
+                                <h2 className="text-lg text-white font-medium title-font mb-2">
+                                No Hidden Charges
                                 </h2>
-                                <p className="leading-relaxed text-base">
-                                    Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-                                    farm.
+                                <p className="leading-relaxed text-white text-base">
+                                Our tailored packages have descriptive details of our services and we do not cause inconvenience to our people. We have pre-defined roadmaps and process plans to keep our clients connected to what they will get and at what cost.
+
+
                                 </p>
                             </div>
                         </div>
-                        <div className="xl:w-1/3 md:w-1/2 py-4 -m-4 px-14">
-                            <div className="border text-center border-gray-200 p-6 rounded-lg">
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                    Fast Turnaround Time
+                        <div className="xl:w-1/4 md:w-1/2 py-2 -m-4 px-10">
+                            <div className="border text-center bg-cyan-700 border-gray-200 p-6 rounded-lg">
+                                <h2 className="text-lg text-white font-medium title-font mb-2">
+                                Unique Designs
+
                                 </h2>
-                                <p className="leading-relaxed text-base">
-                                    Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-                                    farm.
+                                <p className="leading-relaxed text-white text-base">
+                                Every design has its unique identity and creative appeal. We ensure to bring out the appeal in the brand. The dedicated designers in our design company are committed and passionate. They know how to incorporate a striking appeal in the design.
+
+
                                 </p>
                             </div>
                         </div>
-                        <div className="xl:w-1/3 md:w-1/2 py-4 -m-4 px-14">
-                            <div className="border text-center border-gray-200 p-6 rounded-lg">
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                    Fast Turnaround Time
+                        <div className="xl:w-1/3 md:w-1/2 py-2 -m-4 px-10">
+                            <div className="border text-center bg-cyan-700 border-gray-200 p-6 rounded-lg">
+                                <h2 className="text-lg text-gray-100 font-medium title-font mb-2">
+                                Complete Source Files
+
                                 </h2>
-                                <p className="leading-relaxed text-base">
-                                    Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-                                    farm.
+                                <p className="leading-relaxed text-white text-base">
+                                Being the owner of the design, you get the complete source file at the time of project submission. We will submit files in your desired formats to avoid causing any inconvenience for future use. You can even share your submission needs.
+
+
                                 </p>
                             </div>
                         </div>
-                        <div className="xl:w-1/3 md:w-1/2 py-4 -m-4 px-14">
-                            <div className="border text-center border-gray-200 p-6 rounded-lg">
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                    Fast Turnaround Time
+                        <div className="xl:w-1/3 md:w-1/2 py-2 -m-4 px-10">
+                            <div className="border text-center bg-cyan-700 border-gray-200 p-6 rounded-lg">
+                                <h2 className="text-lg text-gray-100 font-medium title-font mb-2">
+                                100% Transparency
                                 </h2>
-                                <p className="leading-relaxed text-base">
-                                    Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-                                    farm.
+                                <p className="leading-relaxed text-white text-base">
+                                With us, you get to experience 100% transparency and sincerity. We keep our clients connected throughout the design journey. Discussing the aesthetics, sharing ideas, and bringing their vision to reality is our foremost goal and prime practice.
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 py-2 -m-4 px-10">
+                            <div className="border text-center bg-cyan-700 border-gray-200 p-6 rounded-lg">
+                                <h2 className="text-lg text-gray-100 font-medium title-font mb-2">
+                                Uninterrupted Communication
+                                </h2>
+                                <p className="leading-relaxed text-white text-base">
+                                We ensure to keep a sound communication with our clients. And for that we assign a dedicated designer and project manager on the project. Our clients get to interact and discuss their needs with the professionals without any barrier.
+
+
+
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                    {/* <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                         Button
-                    </button>
+                    </button> */}
                 </div>
             </section>
             {/* testimonials fake google reviews add krny hain ismy */}
@@ -667,10 +707,9 @@ function GraphicDesign() {
                     </div>
                 </div>
             </section> */}
-            <Reviews />
             {/* why choose us */}
             <WhyChooseUs data={"YOUR DESIGN PARTNER"} />
-
+            <Reviews />
 
 
 
