@@ -37,171 +37,69 @@ export default function App() {
     user: <TagUser className="text-danger" fill="currentColor" size={30} />,
   };
   return (
-    <Navbar isBordered className="text-balance text-center bg-slate-50 z-10" position="sticky">
-      {/* Left section of Navbar */}
-      <NavbarContent justify="start">
-        <NavbarBrand className="mr-4">
-          <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6tzwkSJr3mPy9yIuMQcpjV7AI-O7z8hXSA&s"
-              alt="Logo"
-              style={{ width: "40px", height: "40px" }}
-            />
-            <p className="hidden sm:block font-bold text-inherit">
-              DevScripters
-            </p>
-          </IconButton>
-        </NavbarBrand>
+    <AppBar position="static" style={{ backgroundColor: "#fff", color: "#4A7766", boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)" }}>
+      <Toolbar>
+        <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6tzwkSJr3mPy9yIuMQcpjV7AI-O7z8hXSA&s"
+            alt="Logo"
+            style={{ width: "40px", height: "40px" }}
+          />
+        </IconButton>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          DevScripters
+        </Typography>
+        
+        {/* Links */}
+        <Button component={Link} to="/" color="inherit" sx={{ mr: 2 }}>
+          Home
+        </Button>
+        
+        {/* Services Dropdown */}
+        <Button
+          aria-controls={open ? 'services-menu' : undefined}
+          aria-haspopup="true"
+          aria-expanded={open ? 'true' : undefined}
+          onClick={handleClick}
+          color="inherit"
+        >
+          Services
+        </Button>
+        <Menu
+          id="services-menu"
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          MenuListProps={{
+            'aria-labelledby': 'services-button',
+          }}
+        >
+          <MenuItem onClick={handleClose} component={Link} to="/webdevelopment">Web Development</MenuItem>
+          <MenuItem onClick={handleClose} component={Link} to="/seo">SEO</MenuItem>
+          <MenuItem onClick={handleClose} component={Link} to="/graphicdesign">Graphic Design</MenuItem>
+        </Menu>
 
-        {/* Middle section of Navbar */}
-        <NavbarContent className="hidden sm:flex gap-7">
-          <NavbarItem className="list-none">
-            <Link color="foreground" href="/">
-              Home
-            </Link>
-          </NavbarItem>
-          <NavbarItem isActive>
-            <Dropdown>
-              <NavbarItem>
-                <DropdownTrigger>
-                  <Button
-                    disableRipple
-                    className="p-0 bg-transparent data-[hover=true]:bg-transparent"
-                    endContent={icons.chevron}
-                    radius="sm"
-                    variant="light"
-                  >
-                    Our Services
-                  </Button>
-                </DropdownTrigger>
-              </NavbarItem>
-
-              <DropdownMenu
-                aria-label="devscripters"
-                className="custom-dropdown-menu w-[340px]"
-                itemClasses={{ base: "custom-dropdown-menu-item gap-4" }}
-              >
-                <DropdownItem
-                  key="webdevelopment"
-                  description="ACME scales apps to meet user demand, automagically, based on load."
-                  startContent={icons.scale}
-                  textValue="Web Development"
-                  href="/webdevelopment"
-                >
-                  Web Development
-                </DropdownItem>
-                <DropdownItem
-                  key="usage_metrics"
-                  description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
-                  startContent={icons.activity}
-                  textValue="SEO"
-                  href="/seo"
-
-                >
-                  SEO
-                </DropdownItem>
-                <DropdownItem
-                  key="seo"
-                  description="ACME runs on ACME, join us and others serving requests at web scale."
-                  startContent={icons.flash}
-                  textValue="Graphic Design"
-                  href="/graphicdesign"
-
-                >
-                  Graphic Design
-                </DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
-          </NavbarItem>
-          <NavbarItem>
-            <Link color="foreground" href="/blog">
-              Blog
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link color="foreground" href="/writeforus">
-              Write For Us
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link color="foreground" href="/about">
-              About Us
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link color="foreground" href="contact">
-              Contact Us
-            </Link>
-          </NavbarItem>
-        </NavbarContent>
-      </NavbarContent>
-
-      {/* Right section of Navbar */}
-      <NavbarContent as="div" className="items-center" justify="end">
-        {/* User Avatar and Profile Dropdown */}
-        <Dropdown placement="bottom-end">
-          <DropdownTrigger>
-            <Avatar
-              isBordered
-              as="button"
-              className="transition-transform"
-              color="secondary"
-              name="Jason Hughes"
-              size="sm"
-              src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-            />
-          </DropdownTrigger>
-          <DropdownMenu
-            aria-label="Profile Actions"
-            variant="flat"
-            className="custom-dropdown-menu"
-          >
-            <DropdownItem key="profile" className="h-14 gap-2">
-              <p className="font-semibold">Signed in as</p>
-              <p className="font-semibold">zoey@example.com</p>
-            </DropdownItem>
-            <DropdownItem key="settings" className="custom-dropdown-menu-item">
-              My Settings
-            </DropdownItem>
-            <DropdownItem
-              key="team_settings"
-              className="custom-dropdown-menu-item"
-            >
-              Team Settings
-            </DropdownItem>
-            <DropdownItem key="analytics" className="custom-dropdown-menu-item">
-              Analytics
-            </DropdownItem>
-            <DropdownItem key="system" className="custom-dropdown-menu-item">
-              System
-            </DropdownItem>
-            <DropdownItem
-              key="configurations"
-              className="custom-dropdown-menu-item"
-            >
-              Configurations
-            </DropdownItem>
-            <DropdownItem
-              key="help_and_feedback"
-              className="custom-dropdown-menu-item"
-            >
-              Help & Feedback
-            </DropdownItem>
-            <DropdownItem
-              key="logout"
-              color="danger"
-              className="custom-dropdown-menu-item"
-            >
-              Log Out
-            </DropdownItem>
-          </DropdownMenu>
-        </Dropdown>
-      </NavbarContent>
-    </Navbar>
+        <Button component={Link} to="/contact" color="inherit" sx={{ mr: 2 }}>
+          Contact
+        </Button>
+        <Button component={Link} to="/blog" color="inherit" sx={{ mr: 2 }}>
+          Blog
+        </Button>
+        <Button component={Link} to="/about" color="inherit" sx={{ mr: 2 }}>
+          About Us
+        </Button>
+        <Button component={Link} to="/writeforus" color="inherit" sx={{ mr: 2 }}>
+          Write For Us
+        </Button>
+        
+        {/* Get a Quote Button */}
+        <Button variant="contained" style={{ backgroundColor: "#4A7766", color: "#fff" }}>
+          Get a Quote
+        </Button>
+      </Toolbar>
+    </AppBar>
   );
 }
+
+export default Header;
+
