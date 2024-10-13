@@ -23,17 +23,10 @@ import {
 } from "../components/Icons";
 
 
-export default function App() {
+export default function Header() {
   const icons = {
     chevron: <ChevronDown fill="currentColor" size={16} />,
     scale: <Scale className="text-warning" fill="currentColor" size={30} />,
-  //   lock: <Lock className="text-success" fill="currentColor" size={30} />,
-  //   activity: (
-  //     <Activity className="text-secondary" fill="currentColor" size={30} />
-  //   ),
-  //   flash: <Flash className="text-primary" fill="currentColor" size={30} />,
-  //   server: <Server className="text-success" fill="currentColor" size={30} />,
-  //   user: <TagUser className="text-danger" fill="currentColor" size={30} />,
   };
   return (
     <Navbar isBordered className="text-balance text-center bg-slate-50 z-10" position="sticky">
@@ -87,8 +80,6 @@ export default function App() {
               >
                 <DropdownItem
                   key="webdevelopment"
-                  // description="ACME scales apps to meet user demand, automagically, based on load."
-                  // startContent={icons.scale}
                   textValue="Web Development"
                   href="/webdevelopment"
                 >
@@ -96,8 +87,6 @@ export default function App() {
                 </DropdownItem>
                 <DropdownItem
                   key="usage_metrics"
-                  // description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
-                  // startContent={icons.activity}
                   textValue="SEO"
                   href="/seo"
 
@@ -106,8 +95,6 @@ export default function App() {
                 </DropdownItem>
                 <DropdownItem
                   key="seo"
-                  // description="ACME runs on ACME, join us and others serving requests at web scale."
-                  // startContent={icons.flash}
                   textValue="Graphic Design"
                   href="/graphicdesign"
                 >
