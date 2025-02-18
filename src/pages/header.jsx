@@ -22,14 +22,17 @@ import {
   Scale,
 } from "../components/Icons";
 
-
 export default function Header() {
   const icons = {
     chevron: <ChevronDown fill="currentColor" size={16} />,
     scale: <Scale className="text-warning" fill="currentColor" size={30} />,
   };
   return (
-    <Navbar isBordered className="text-balance text-center bg-slate-50 z-10" position="sticky">
+    <Navbar
+      isBordered
+      className="text-balance text-center bg-slate-50 z-10"
+      position="sticky"
+    >
       {/* Left section of Navbar */}
       <NavbarContent justify="start">
         <NavbarBrand className="mr-4">
@@ -39,14 +42,16 @@ export default function Header() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6tzwkSJr3mPy9yIuMQcpjV7AI-O7z8hXSA&s"
-              alt="Logo"
-              style={{ width: "40px", height: "40px" }}
-            />
-            <p className="hidden px-2 sm:block font-bold text-inherit">
-              DevScripters
-            </p>
+            <Link href="/">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6tzwkSJr3mPy9yIuMQcpjV7AI-O7z8hXSA&s"
+                alt="Logo"
+                style={{ width: "40px", height: "40px" }}
+              />
+              <p className="hidden px-2 sm:block font-bold text-inherit">
+                DevScripters
+              </p>
+            </Link>
           </IconButton>
         </NavbarBrand>
 
@@ -85,12 +90,7 @@ export default function Header() {
                 >
                   Web Development
                 </DropdownItem>
-                <DropdownItem
-                  key="usage_metrics"
-                  textValue="SEO"
-                  href="/seo"
-
-                >
+                <DropdownItem key="usage_metrics" textValue="SEO" href="/seo">
                   SEO
                 </DropdownItem>
                 <DropdownItem
